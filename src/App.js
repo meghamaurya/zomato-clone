@@ -1,9 +1,14 @@
 import './App.css';
 import Footer from './Components/Footer/Footer';
+import Popular from './Components/Popular/Popular';
+
 
 function App() {
   return (
-    <><Footer /></>
+    <>
+      <Popular />
+      <Footer />
+    </>
   );
 }
 

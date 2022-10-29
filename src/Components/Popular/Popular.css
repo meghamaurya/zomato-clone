@@ -1,0 +1,78 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 1rem;
+}
+
+.popular > span {
+    font-size: 1.2rem;
+}
+
+.popular .city{
+    font-weight: 600;
+}
+
+.popular .places {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.popular .places .item {
+    display: flex;
+    justify-content: space-between;
+    border: 0.15rem solid #E8E8E8;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.popular .places .item:hover {
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popular .places .item .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.popular .places .item .left span {
+    font-size: 1.1rem;
+}
+.popular .places .item .left span:last-child {
+    color: #696969;
+    font-size: 0.9rem;
+}
+
+.popular .places .item .icon {
+    font-size: 0.85rem;
+}
+
+.popular .places .more {
+    justify-content: center ;
+    gap: 1rem;
+    font-size: 1.1rem !important;
+}
+
+
+
+@media (min-width: 500px) {
+    .popular .places {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .popular > span {
+        font-size: 2rem;
+    }
+    .popular {
+        padding: 3rem 5rem;
+    }
+    .popular .places {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
