@@ -6,7 +6,7 @@
     flex-wrap: wrap; */
     /* position: relative; */
     /* width: 100%; */
-    padding: 8px;
+    padding: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -15,22 +15,22 @@
     /* margin: 0.7rem; */
     padding-bottom: 0.5rem;
     /* width: 10.2rem; */
-    max-height: 150px; 
+    /* max-height: 15rem;  */
     border: 0.2px solid rgba(189, 189, 189, 0.537);
-    border-radius: 12px;
+    border-radius: 0.8rem;
     /* overflow: hidden; */
 }
 .card-img{
     /* width: 100%; */
     height: 5rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
     object-fit: cover;
 }
 .text{
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0.8rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
     color: black;
     text-align: start;
 }
@@ -43,6 +43,6 @@
     color: gray;
     text-overflow: hidden;
     white-space: nowrap;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
 }

@@ -4,6 +4,7 @@ import Icons from "./Icons";
 import Location from "../../Image/Location.svg";
 import Search from "../../Image/Search.svg";
 import DownAngle from "../../Image/DownAngle.svg";
+
 function Hero() {
 
     return (

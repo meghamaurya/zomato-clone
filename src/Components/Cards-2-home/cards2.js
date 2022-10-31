@@ -1,5 +1,6 @@
 import Cards from './cards2.json';
 import './style2.css';
+
 const Cards2 = () => {
 
     return (
