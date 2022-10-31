@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "https://b.zmtcdn.com/data/collections/e5bf9af49aff07b0b0e99aa09113541d_1528720123.jpg?output-format=webp",
+        "title": "Must-Visit Restaurant in Bhopal",
+        "place": "22 Places"
+    },
+    {
+        "id": 2,
+        "image": "https://b.zmtcdn.com/data/collections/ac5ed5f18d3632a65f2848872aad3f98_1619176684.jpg?output-format=webp",
+        "title": "Rooftops",
+        "place": "8 Places"
+    },
+    {
+        "id": 3,
+        "image": "https://b.zmtcdn.com/data/collections/e662922172f1042adf4243624911f634_1625830568.jpg?output-format=webp",
+        "title": "Sweet Tooth",
+        "place": "13 Places"
+    },
+    {  
+        "id": 4,
+        "image": "https://b.zmtcdn.com/data/collections/cb7d5338a51c863879f5d87d1470f2b1_1619502910.jpg?output-format=webp",
+        "title": "Pocket Friendly",
+        "place": "18 Places"
+    }
+]

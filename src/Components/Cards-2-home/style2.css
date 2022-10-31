@@ -1,0 +1,25 @@
+
+.cards2-container{
+    display: flex;
+    
+}
+.heading{
+    margin-top: 5rem;
+    padding: 1.5rem;
+}
+.card {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+img{
+   width: 100%;
+   /* height: auto; */
+   object-fit: cover;
+}
