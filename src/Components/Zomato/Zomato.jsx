@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Download from '../Footer/Download';
 import LinkSend from './LinkSend';
 import './Zomato.css';
 import { TfiAngleDown } from 'react-icons/tfi';
 
-const countryCode = [91, 82, 36, 48]
+const countryCode = [91, 60, 63, 96, 56, 1, 64, 27, 353, 44, 971, 420, 65, 351, 974, 61, 421, 55, 48]
 
 function Zomato() {
   const [sendType, setSendType] = useState('Email');
   const [selectCountry, setSelectCountry] = useState(91);
   const [openCode, setOpenCode] = useState(false);
 
+  const [value, setValue] = useState('');
+
   const handleCode = (item) => {
     setSelectCountry(item);
     setOpenCode(false)
   }
+
+  useEffect(() => {
+    setValue('')
+  }, [sendType])
   return (
     <div className='zomato'>
       <img src='https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png' alt='' />
@@ -26,8 +32,8 @@ function Zomato() {
           <LinkSend sendType={sendType} setSendType={setSendType} name='Phone' />
         </div>
         <div className='send'>
-          <input className={sendType === 'Phone' ? 'Phone' : ''} type='text' placeholder={sendType === 'Email' ? 'Email' : 'Type Here'} />
-          <button>Share</button>
+          <input onChange={(e) => setValue(e.target.value)} value={value} className={sendType === 'Phone' ? 'Phone' : ''} type='text' placeholder={sendType === 'Email' ? 'Email' : 'Type Here'} />
+          <button></button>
           {sendType === 'Phone' ? <span onClick={() => setOpenCode(!openCode)}>+{selectCountry} <TfiAngleDown className='icon' /></span> : null}
           {openCode && sendType === 'Phone' ? <div className='phoneCode'>
             {countryCode.map((item, index) => {

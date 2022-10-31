@@ -33,8 +33,9 @@
 
 .zomato .App .SendLink {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     margin: auto;
+    margin-top: 1rem;
     accent-color: var(--primary-red);
     color: #696969;
 }
@@ -64,10 +65,10 @@
     padding: 0.4rem;
     background: white;
     top: 0;
-    transform: translateY(14%);
+    transform: translateY(20%);
     color: black;
     left: 0.3rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .zomato .App .send > span .icon {
@@ -77,11 +78,11 @@
 
 .zomato .App .send input {
     width: 100%;
-    padding: 0.6rem 0.7rem;
+    padding: 0.85rem 0.7rem;
     outline: none;
+    font-size: 1rem;
     border: 0.12rem solid #acabab;
     border-radius: 0.3rem;
-    font-size: 0.9rem;
 }
 
 .zomato .App .send .Phone {
@@ -91,14 +92,19 @@
 .zomato .App .send button {
     background: var(--primary-red);
     border: none;
-    padding: 0.6rem 0.9rem;
+    padding: 0.85rem 1.5rem;
     color: white;
     border-radius: 0.3rem;
     cursor: pointer;
+    font-size: 1rem;
+}
+
+.zomato .App .send button::before {
+    content: 'Send';
 }
 
 .zomato .App .send button:hover {
-    background: var(--primary-red);
+    background: #d84554;
 }
 
 .zomato .App .send .phoneCode {
@@ -107,11 +113,13 @@
     display: flex;
     top: 0;
     flex-direction: column;
-    transform: translateY(28%);
+    transform: translateY(20%);
     padding: 0.2rem 0.1rem;
     border-radius: 0.3rem;
     width: 25%;
     box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+    height: 15rem;
+    overflow-y: scroll;
 }
 
 .zomato .App .send .phoneCode > span {
@@ -130,20 +138,37 @@
 .zomato .App .download {
     display: flex;
     gap: 2rem;
+    margin: auto;
 }
 
 .zomato .App .download img {
     width: 8rem;
+    display: block;
+}
+
+@media (max-width: 300px) {
+    .zomato .App .download {
+        flex-direction: column;
+    }
+    .zomato .App .download img {
+        margin: auto;
+    }
 }
 
 @media (min-width: 500px) {
     .zomato .App .send .phoneCode{
         width: 15%;
     }
+    .zomato .App .send button {
+        padding: 0.85rem 2rem;
+    }
 }
 
 @media (min-width: 768px) {
-    .zomato img {
+    .zomato .App .download {
+        margin: 0;
+    }
+    .zomato > img {
         display: block;
     }
 
@@ -153,6 +178,7 @@
 
     .zomato .App .SendLink {
         margin: 0;
+        margin-top: 1rem;
     }
 
     .zomato {
@@ -165,5 +191,11 @@
 
     .zomato .App .send input {
         width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .zomato .App .send button::before {
+        content: 'Share App Link';
     }
 }
