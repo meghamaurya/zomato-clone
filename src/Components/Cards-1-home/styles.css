@@ -1,46 +1,47 @@
-*{
-    box-sizing: border-box;
-}
+
 .container{
     
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    height: auto;
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     /* display: grid;
     grid-template-columns: auto auto; */
 }
 .card{
     margin: 0.7rem;
-    width: 10rem;
-    /* height: 15rem; */
-    border: 1px solid gray;
+    padding-bottom: 0.5rem;
+    width: 10.2rem;
+    max-height: 150px; 
+    border: 0.2px solid rgba(128, 128, 128, 0.537);
     border-radius: 12px;
-
+    overflow: hidden;
 }
-img{
-    display: inline-block;
-    width: 100%;
-    height: 40%;
+.card-img{
+    /* width: 100%; */
+    height: 60%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-
+    object-fit: cover;
 }
 .text{
-    padding: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    text-align: start;
 }
-h2{
-    display: inline-block;
-    font-size: large;
+.p1{
+    font-size: 0.9rem;
+    font-weight: 400;
 }
-p{
-    display: inline-block;
-    font-size: small;
-    padding-top: 2px;
-    text-overflow: clip;
+.p2{
+    font-size: 0.8rem;
+    color: gray;
+    text-overflow: hidden;
+    white-space: nowrap;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }

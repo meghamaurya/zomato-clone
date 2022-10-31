@@ -1,16 +1,16 @@
 import cardDetail from './cards.json';
 import './styles.css';
-const Cards = () => {
+const Cards1 = () => {
 
     return (
         <div className="container">
             {cardDetail.map((item) => {
                 return (
                     <div key={item.id} className='card'>
-                        <img src={item.img} alt={item.title} />
+                        <img src={item.img} alt={item.title} className="card-img" />
                         <div className='text'>
-                            <h2>{item.title}</h2>
-                            <p>{item.description}</p>
+                            <p className='p1'>{item.title}</p>
+                            <p className='p2'>{item.description}</p>
                         </div>
                     </div>
                 )
@@ -18,4 +18,4 @@ const Cards = () => {
         </div>
     )
 }
-export default Cards;
+export default Cards1;
