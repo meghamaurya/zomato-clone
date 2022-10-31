@@ -2,9 +2,9 @@ import React from 'react'
 
 function SocialLink(props) {
   return (
-    <div className='social'>
+    <a href={props.link} target='_blank' rel='noreferrer' className='social'>
         <props.icon className='icon' />
-    </div>
+    </a>
   )
 }
 
