@@ -56,15 +56,15 @@ function Footer() {
                 <div className="items social-items">
                     <Heading title='social links' />
                     <div className='social-links'>
-                        <SocialLink icon={FaLinkedinIn} />
-                        <SocialLink icon={FaInstagram} />
-                        <SocialLink icon={FaTwitter} />
-                        <SocialLink icon={FaYoutube} />
-                        <SocialLink icon={FaFacebookF} />
+                        <SocialLink link='https://www.linkedin.com/in/rahulrajput83/' icon={FaLinkedinIn} />
+                        <SocialLink link='https://instagram.com' icon={FaInstagram} />
+                        <SocialLink link='https://twitter.com/rahulrajput_83' icon={FaTwitter} />
+                        <SocialLink link='https://youtube.com' icon={FaYoutube} />
+                        <SocialLink link='https://facebook.com' icon={FaFacebookF} />
                     </div>
                     <div className='download'>
-                        <Download img={'https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png'} />
-                        <Download img={'https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png'} />
+                        <Download link='https://appstore.com' img={'https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png'} />
+                        <Download link='https://playstore.com' img={'https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png'} />
                     </div>
                 </div>
             </div>
