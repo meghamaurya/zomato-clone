@@ -1,0 +1,117 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 1rem;
+}
+
+.explore > span {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.explore .explore-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    padding-top: 0;
+    border-radius: 0.4rem;
+    border: 0.125rem solid #e9e8e6;
+}
+
+.explore .explore-card .title {
+    padding-top: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.explore .explore-card .title .rotateShow {
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-180deg);
+    font-size: 0.8rem;
+    color: black;
+}
+
+.explore .explore-card .title .rotateHide {
+    transition: all 0.3s ease-in-out;
+    transform: rotate(0deg);
+    font-size: 0.8rem;
+    color: black;
+}
+
+.explore .explore-card .title span {
+    font-size: 1.2rem;
+}
+
+.explore .explore-card .detail {
+    display: inline-flex;
+    margin-top: 1rem;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+
+.explore .explore-card .detail .card-item {
+    display: inline-flex;
+    gap: 0.7rem;
+}
+
+.explore .explore-card .hide{
+    display: none !important;
+}
+
+.explore .explore-card .detail .card-item span {
+    color: #5c5b5a;
+}
+
+.explore .explore-card .detail .link, .explore .explore-card .countries .link {
+    text-decoration: none;
+    color: #5c5b5a;
+    width: fit-content;
+    font-size: 0.9rem;
+}
+
+.explore .explore-card .countries .bold {
+    font-weight: 500;
+    text-decoration: underline;
+    color: black;
+}
+
+.explore .explore-card .detail .link:hover, .explore .explore-card .countries .link:hover{
+    color: #333333;
+}
+
+.explore .explore-card .countries {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+}
+
+@media (max-width: 300px) {
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 500px) {
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .explore {
+        padding: 3rem 5rem;
+    }
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
