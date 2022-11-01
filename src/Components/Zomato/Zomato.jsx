@@ -20,7 +20,8 @@ function Zomato() {
 
   useEffect(() => {
     setValue('')
-  }, [sendType])
+  }, [sendType]);
+  
   return (
     <div className='zomato'>
       <img src='https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png' alt='' />
