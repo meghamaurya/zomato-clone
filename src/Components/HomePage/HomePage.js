@@ -4,6 +4,7 @@ import Cards1 from "../Cards-1-home/cards";
 import Popular from "../Popular/Popular";
 import Zomato from "../Zomato/Zomato";
 import Footer from "../Footer/Footer";
+import Explore from "../Explore/Explore";
 
 const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Cards2 />
             <Popular />
             <Zomato />
+            <Explore />
             <Footer />
         </div>
     )
