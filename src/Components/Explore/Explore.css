@@ -65,30 +65,53 @@
     color: #5c5b5a;
 }
 
-.explore .explore-card .detail .link {
+.explore .explore-card .detail .link, .explore .explore-card .countries .link {
     text-decoration: none;
     color: #5c5b5a;
     width: fit-content;
     font-size: 0.9rem;
 }
 
-.explore .explore-card .detail .bold {
+.explore .explore-card .countries .bold {
     font-weight: 500;
     text-decoration: underline;
     color: black;
 }
 
-.explore .explore-card .detail .link:hover{
+.explore .explore-card .detail .link:hover, .explore .explore-card .countries .link:hover{
     color: #333333;
 }
 
-.explore .explore-card .detail .countries {
+.explore .explore-card .countries {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+}
+
+@media (max-width: 300px) {
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 500px) {
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (min-width: 768px) {
     .explore {
         padding: 3rem 5rem;
+    }
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .explore .explore-card .countries{
+        grid-template-columns: repeat(5, 1fr);
     }
 }
