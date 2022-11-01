@@ -21,7 +21,7 @@ function Hero() {
                     <div className="verticalLine"></div>
                     <div className="searchField">
                         <Icons src={Search} />
-                        <Input placeholder="Search for restaurant" className="searchInput" type="search" disabled={false} />
+                        <Input placeholder="Search for restaurant, cuisine or a dish" className="searchInput" type="search" disabled={false} />
                     </div>
                 </div>
             </div>

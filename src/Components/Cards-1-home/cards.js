@@ -5,7 +5,6 @@ import responsiveHOC from 'react-lines-ellipsis/lib/responsiveHOC'
 
 const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis)
 
-
 const Cards1 = () => {
 
     return (
@@ -17,7 +16,6 @@ const Cards1 = () => {
                         <div className='text'>
                             <span className='p1'>{item.title}</span>
                             <span className='p2'><ResponsiveEllipsis text={item.description} maxLine='1' ellipsis="..." trimRight basedOn='letters' /></span>
-                            {/* <p className='p2'>{item.description}</p> */}
                         </div>
                     </div>
                 )
