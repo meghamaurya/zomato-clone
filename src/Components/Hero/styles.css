@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    /* height: 100%; */
     font-weight: 400;
 }
 
@@ -9,59 +8,47 @@
     background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
     background-position: center;
     background-size: cover;
-    height: 70vh;
-    /* height: 65%; */
-    position: relative;
-    padding: 20px;
+    padding: 10rem 0.5rem 5rem 0.5rem;
 }
 .hero-text{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -15%);
     color: white;
-    position: absolute;
     width: 100%;
-    padding: 15px;
 }
 .title{
-    background-image: url("https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
-    margin-left: 3rem ;
-    max-width: 70%;
-    height: 10rem;
-    /* height: 20%; */
-    margin-bottom: 1.4rem;
+    padding: 1rem;
+    width: 15rem;
+    margin: auto;
 }
 .hero-text h1 {
-    font-size: 1.3rem;
-    margin-block-end: 0px;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     display: inline;
 }
 .icons{
-    width: 1.5rem;
+    height: 1rem;
+    width: auto;
+    object-fit: cover;
+    margin: 0 0.1rem;
 }
+
 .searchBar{
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    margin-top: 1.5rem;
-    padding: 8px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    height: 12%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0.5rem;
     border-radius: 10px;
     background-color: white;
     overflow: hidden;
 }
+.searchBar input {
+    width: 100%;
+    outline: none;
+    padding: 0 0.5rem;
+}
 .dropdown{
     display: flex;
-    grid-column:span 1;
-
 }
 .location{
     color: black;
@@ -71,23 +58,27 @@
     font-size: medium;
 }
 .verticalLine{
-    border-left: 4px solid gray;
-    margin: auto;
-
+    margin: 0 1rem;
+    border-left: 0.01rem solid gray;
+    width: 0.1rem;
 }
 .searchField{
+    width: 100%;
     display: flex;
-    grid-column: span 1;
-    width: 10.5rem;
 }
 .searchInput{
     background: transparent;
     border: none;
     margin-top:0px ;
     font-size: medium;
-    
 }
 
+@media(min-width: 500px) {
+    .searchBar {
+        width: 60%;
+        margin: auto;
+    }
+}
 
 
 

@@ -10,7 +10,7 @@ function Hero() {
     return (
         <div className="hero-image">
             <div className="hero-text">
-                <div className="title"></div>
+                <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="" className="title" />
                 <h1>Discover the best food & drinks in Bhopal</h1>
                 <div className="searchBar">
                     <div className="dropdown">
