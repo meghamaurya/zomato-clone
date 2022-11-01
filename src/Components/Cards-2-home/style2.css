@@ -1,18 +1,17 @@
-
 .cards2-container{
     display: flex;
     
 }
-.heading{
+.cards2-container .heading{
     margin-top: 5rem;
     padding: 1.5rem;
 }
-.card {
+.cards2-container .card {
     position: relative;
     text-align: center;
     color: white;
 }
-.img-text{
+.cards2-container .card .img-text{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,6 +19,5 @@
 }
 img{
    width: 100%;
-   /* height: auto; */
    object-fit: cover;
 }

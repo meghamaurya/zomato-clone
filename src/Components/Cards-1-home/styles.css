@@ -5,33 +5,35 @@
     gap: 0.7rem;
 }
 
-.card {
+.container .card {
     width: 100%;
     border: 0.2px solid rgba(189, 189, 189, 0.537);
     border-radius: 0.8rem;
 }
 
-.card-img {
+.container .card .card-img {
     height: 6rem;
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     object-fit: cover;
 }
 
-.text {
+.container .card .text {
     padding: 0.8rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     color: black;
     text-align: start;
+    display: flex;
+    flex-direction: column;
 }
 
-.p1 {
+.container .card .p1 {
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-.p2 {
+.container .card .p2 {
     font-size: 0.8rem;
     width: 100%;
     color: gray;

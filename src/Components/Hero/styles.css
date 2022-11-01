@@ -1,40 +1,37 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-weight: 400;
-}
-
 .hero-image{
     background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
     background-position: center;
     background-size: cover;
     padding: 10rem 0.5rem 5rem 0.5rem;
 }
-.hero-text{
+.hero-image .hero-text{
     display: flex;
     flex-direction: column;
     text-align: center;
     color: white;
     width: 100%;
 }
-.title{
+
+.hero-image .title{
     padding: 1rem;
     width: 15rem;
     margin: auto;
 }
-.hero-text h1 {
+
+.hero-image .hero-text h1 {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     display: inline;
 }
-.icons{
+
+.hero-image .hero-text .searchBar .icons{
     height: 1rem;
     width: auto;
     object-fit: cover;
     margin: 0 0.1rem;
 }
 
-.searchBar{
+.hero-image .hero-text .searchBar{
     display: flex;
     flex-direction: row;
     padding: 1rem 0.5rem;
@@ -42,31 +39,31 @@
     background-color: white;
     overflow: hidden;
 }
-.searchBar input {
+.hero-image .hero-text .searchBar input {
     width: 100%;
     outline: none;
     padding: 0 0.5rem;
 }
-.dropdown{
+.hero-image .hero-text .searchBar .dropdown{
     display: flex;
 }
-.location{
+.hero-image .hero-text .searchBar .dropdown .location{
     color: black;
     background: transparent;
     border: none;
     width: 100%;
     font-size: medium;
 }
-.verticalLine{
+.hero-image .hero-text .searchBar .verticalLine{
     margin: 0 1rem;
     border-left: 0.01rem solid gray;
     width: 0.1rem;
 }
-.searchField{
+.hero-image .hero-text .searchBar .searchField{
     width: 100%;
     display: flex;
 }
-.searchInput{
+.hero-image .hero-text .searchBar .searchField .searchInput{
     background: transparent;
     border: none;
     margin-top:0px ;
