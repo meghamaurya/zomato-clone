@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 400;
+}
+
+.hero-image{
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 0.5rem 5rem 0.5rem;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.title{
+    padding: 1rem;
+    width: 15rem;
+    margin: auto;
+}
+.hero-text h1 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: inline;
+}
+.icons{
+    height: 1rem;
+    width: auto;
+    object-fit: cover;
+    margin: 0 0.1rem;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+.searchBar input {
+    width: 100%;
+    outline: none;
+    padding: 0 0.5rem;
+}
+.dropdown{
+    display: flex;
+}
+.location{
+    color: black;
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: medium;
+}
+.verticalLine{
+    margin: 0 1rem;
+    border-left: 0.01rem solid gray;
+    width: 0.1rem;
+}
+.searchField{
+    width: 100%;
+    display: flex;
+}
+.searchInput{
+    background: transparent;
+    border: none;
+    margin-top:0px ;
+    font-size: medium;
+}
+
+@media(min-width: 500px) {
+    .searchBar {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    font-weight: 400;
+}
+.hero-image{
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    position: relative;
+}
+.hero-text{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    margin-left: 25vw ;
+}
+.title{
+    background-image: url("https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: contain;
+    margin: auto;
+    margin-top: 6rem;
+    width: 20vw;
+    height: 15%;
+}
+.hero-text h1 {
+    margin-top: 2.3rem;
+} */
