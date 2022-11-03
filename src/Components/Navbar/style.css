@@ -2,32 +2,101 @@
     background: transparent;
     background-color: rgba(0, 0, 0, 0.814);
     color: white;
+    position: relative;
 }
-.navbar .content{
+.navbar .navigation-menu{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin:0 12rem;
 }
-.navbar .add {
+.navbar .navigation-menu .add {
     color: white;
     font-size: 0.9rem;
     font-weight: 300;
     margin: auto 0;
+    display: block;
     /* left: 50%;
     top: 50%;
     transform: translate(0%, 40%); */
 }
-.navbar .menu-link{
+.navbar .navigation-menu  .menu-link{
     display: flex;
     justify-content: end;
-    
 }
-.navbar .menu-link .li{
+.navbar .navigation-menu .menu-link li{
     list-style: none;
+   
 }
-.navbar .menu-link .link{
+.navbar .navigation-menu .menu-link .li .link{
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
     font-weight: 300;
+}
+
+.navbar .hamburger{
+    border: 0;
+    height: 4rem;
+    width: 4rem;
+    padding: 0rem;
+    border-color: rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%);
+    display: none;
+}
+.navbar .hamburger .hamburger-icon{
+    width: 1.7rem;
+    height: 2.2rem;
+}
+.navbar .hamburger .hamburger-cross{
+    width: 2.2rem;
+    height: 2.6rem;
+    color: rgba(72, 70, 70, 0.817);
+}
+@media (max-width: 768px) {
+     .navbar .hamburger{
+        display: block;
+     }
+     .navbar .navigation-menu .add {
+        display: none;
+     }
+}
+@media (max-width: 768px) {
+    .navigation-menu .menu-link .ul{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-menu .menu-link .ul{
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: white;
+        border-top: 1px solid black;
+    } 
+    .navigation-menu .menu-link .li{
+        text-align: center;
+        margin: 0;
+    }
+    .navigation-menu .menu-link .li .link {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+        position: relative;
+    }
+}  
+@media screen and (max-width: 768px) {
+    .navigation-menu.expanded .ul{
+        display: block;
+    }
 }
