@@ -1,8 +1,6 @@
 .card2-container{
-    margin: 1.5rem;
-}
-.card2-container .heading{
-    margin-top: 5rem;
+    /* margin: 1.5rem; */
+    padding: 3rem 1rem;
 }
 .card2-container .heading h3{
     margin-block-end: 0px;
@@ -44,7 +42,11 @@
     left: 50%;
     transform: translate(-5rem, 3rem);
 }
-
+@media (max-width: 300px) {
+    .card2-container .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 @media (min-width: 480px) {
     .card2-container .detail{
@@ -78,7 +80,7 @@
 @media (min-width: 1020px) {
     .card2-container{
             gap: 1.5rem;
-            margin: 2rem 12rem; 
+            padding: 3rem 5rem;
     }
     .card2-container .heading h3{
         font-size: 2.2rem;

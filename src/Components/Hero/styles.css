@@ -9,7 +9,7 @@
     flex-direction: column;
     text-align: center;
     color: white;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .hero-image .title{
@@ -32,7 +32,7 @@
     margin: 0 0.1rem;
 }
 .hero-image .hero-text  input {
-    width: 100%;
+    /* width: 100%; */
     outline: none;
     padding: 0 0.5rem;
 }
@@ -90,7 +90,7 @@
         flex-direction:row;
         border-radius: 10px;
         overflow: hidden;
-        width: 70%;
+        /* width: 70%; */
         margin: auto;
         background-color: white;
         padding: 0rem;
@@ -104,8 +104,11 @@
     }
 }
 @media (min-width: 800px) {
+    .hero-image{
+        padding: 6rem 0.5rem 6rem 0.5rem;
+    }
     .hero-image .hero-text .searchBar{
-        width: 53%;
+        width: 66%;
 }
 .hero-image .hero-text  .dropdown .location{
         padding-right: 5rem ;
