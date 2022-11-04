@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-const List = ({ Children }) => {
+const List = ({ children }) => {
 
     return (
-        <div>
+        <>
             <ul className='ul'>
                 <li className='li'>
-                    <Link to="/" className='link'>{Children}</Link>
+                    <Link to="/" className='link' >{children}</Link>
                 </li>
             </ul>
-        </div>
+        </>
     )
 }
 export default List;
