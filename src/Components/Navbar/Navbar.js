@@ -19,11 +19,12 @@ function Navbar() {
                     onClick={handleClick} >
                     {isNavExpanded ?
                         <RiCloseLine className='hamburger-cross' />
-                        : <IoMdMenu className='hamburger-icon' />}
+                        : <IoMdMenu className='hamburger-icon' />
+                    }
                 </button>
                 {isNavExpanded ? <div>
                     <span className='title'>zomato</span>
-                </div> : ""}
+                </div> : null}
             </div>
             <div className={isNavExpanded ? 'navigation-menu expanded' : "navigation-menu"}>
                 {!isNavExpanded ? <div className='add'>
