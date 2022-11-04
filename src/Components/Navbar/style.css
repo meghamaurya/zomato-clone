@@ -1,16 +1,17 @@
 .navbar{
     /* background: transparent; */
     background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.814);
+    /* background-color: rgba(0, 0, 0, 0.814); */
     color: white;
-    position: relative;
+    position: absolute;
+    padding: 0.5rem 5rem;
 }
 .navbar .navigation-menu{
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
     display: flex;
     justify-content: space-between;
-    margin:0 12rem;
+    /* margin:0 12rem; */
 }
 .navbar .navigation-menu .add {
     color: white;
@@ -19,7 +20,6 @@
     margin: auto 0;
     display: block;
 }
-
 .navbar .navigation-menu .menu-link .li{
     list-style: none;
 }
@@ -57,13 +57,13 @@
 .navbar .hamburger-heading .hamburger  .hamburger-cross{
     width: 2.2rem;
     height: 2.6rem;
-    color: rgba(99, 97, 97, 0.817);
-    float: inline-start;
+    color: rgba(20, 19, 19, 0.817);
+    /* z-index: 20; */
 }
-.navbar .hamburger-heading .hamburger .title{
+.navbar .hamburger-heading .title{
     color: white;
-    font-size: 2rem;
-    float: right;
+    font-size: 1rem;
+    margin: 18rem;
 }
 @media screen and (max-width: 768px) {
      .navbar .hamburger{
@@ -77,30 +77,30 @@
     .navigation-menu .menu-link .ul{
         display: none;
         
-        width: 94.5%;
+        /* width: 94.5%; */
     }
 }
 
 @media (max-width: 768px) {
     .navigation-menu .menu-link {
         position: absolute;
-        top: 1.5rem;
+        top: 5rem;
         left: 0;
         flex-direction: column;
-        /* width: 100%; */
-        /* height: calc(100vh - 77px); */
+        width: 50%;
         z-index: 10;
         height: 197rem;
         background-color: white;
         border-top: 1px solid black;
+        padding-top: 5rem ;
     } 
     .navigation-menu .menu-link .ul{
-         margin: 0;
+         margin: 1rem ;
          
     }
     .navigation-menu .menu-link .ul .li{
-        margin: 1rem 0;
-        padding: 0 1rem ;
+        margin: 2rem 0;
+        padding: 0 0rem ;
 
     }
     .navigation-menu .menu-link .ul .li .link {
@@ -119,6 +119,6 @@
 @media screen and (min-width: 768px) {
     .navbar .navigation-menu  .menu-link{
         display: flex;
-        justify-content: end;
+
     }
 }
