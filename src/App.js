@@ -4,6 +4,7 @@ import Footer from './Components/Footer/Footer';
 import Popular from './Components/Popular/Popular';
 import Zomato from './Components/Zomato/Zomato';
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import FoodDetails from './Components/FoodDetails/FoodDetails';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Explore />
           <Footer />
         </>} />
+        <Route path='/agra' element={<FoodDetails />} />
       </Routes>
     </BrowserRouter>
   );
