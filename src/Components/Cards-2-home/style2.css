@@ -26,6 +26,7 @@
     margin-top: 2rem;
 }
 .card2-container .card {
+    text-decoration: none;
     position: relative;
     color: white;
     cursor: pointer;
