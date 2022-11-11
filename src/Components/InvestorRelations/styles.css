@@ -1,18 +1,22 @@
 /*slideshow*/
 .slideshow {
     margin: 0 auto;
-    background-size: cover;
+    overflow: hidden;
 }
 .slideshow .slideshowSlider{
     white-space: nowrap;
     transition: ease 1000ms;
     /* height: 15rem; */
 }
+/* .slideshow .slideshowSlider .image{ */
+    /* height: 14rem; */
+    /* height: 40vh; */
+    
+/* } */
 .slideshow .slideshowSlider .slide{
     display: inline-block;
-    width: full;
-    /* height: 400px; */
-    background-size: cover;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* button */
@@ -27,11 +31,47 @@
     border-radius: 1rem;
     cursor: pointer;
     margin: 0px 0.1rem 0px;
-    background-color: #c4c4c4;
-    opacity: 0.5;
-    translate: 0 -2rem;
+    background-color: #4b4444;
+    opacity: 0.2;
+    translate: 0 -5rem;
 }
 
 .dot.active {
     background-color: #ef4f5f;
+}
+
+/*detail*/
+
+.slideshow .slideshowSlider .slide .detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 3rem; */
+    padding:0 0.5rem;
+    color: rgba(255, 255, 255, 0.958);
+    translate: 0 -5rem;
+    text-align: start;
+    overflow:hidden;
+    justify-content: space-between;
+}
+/* .slideshow .slideshowSlider .slide .detail .part1{ */
+    /* width: 1rem; */
+   
+/* } */
+
+.slideshow .slideshowSlider .slide .detail .part1 .title{
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.slideshow .slideshowSlider .slide .detail .part1 .description{
+    inline-size: 0.2rem;
+    overflow-wrap: break-word;
+}
+.slideshow .slideshowSlider .slide .detail .part2{
+    background-color: #1c191978;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-size: small;
+    color: rgba(255, 255, 255, 0.681);
 }
