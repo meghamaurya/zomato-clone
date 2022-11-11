@@ -28,6 +28,7 @@
 .card2-container .card {
     position: relative;
     color: white;
+    cursor: pointer;
 }
 .card2-container img{
     width: 100%;
@@ -38,10 +39,22 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-5rem, 3rem);
+    bottom: 5%;
+    left: 3%;
+    width: 90%;
 }
+
+.card2-container .img-text .title{
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+}
+.card2-container .img-text .place{
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 0.3rem 0rem 0;
+}
+
 @media (max-width: 300px) {
     .card2-container .cards{
         grid-template-columns: repeat(1, 1fr);
@@ -72,9 +85,6 @@
         height: 100%;
         background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,1));
     }
-    .card2-container .cards .img-text{
-        transform: translate(-4rem, 4rem);
-    }
 }
 
 @media (min-width: 1020px) {
@@ -90,11 +100,13 @@
         margin-top: 1rem;
     }
     .card2-container .cards .img-text{
-        transform: translate(-7.2rem, 6.5rem);
+        bottom: 5%;
+        left: 2%;
     }
     .card2-container .img-text .title{
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 300;
+        width: 100%;
     }
     .card2-container .img-text .place{
         font-size: 0.9rem;
