@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../Logo';
 import './detail.css';
-import { FaAngleDown, FaUserAlt } from 'react-icons/fa'
+import { FaUserAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import Delivery from './Delivery';
 import Heading from './Heading';
