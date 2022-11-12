@@ -4,11 +4,11 @@ import QuarterlyResult from "../IRQuarterlyResult/QR";
 import IRAboutUs from "../IRAboutUs/AboutUs";
 const InvestorRelations = () => {
   return (
-    <div>
+    <>
       <Carousel />
       <QuarterlyResult />
       <IRAboutUs />
-    </div>
+    </>
   );
 };
 
