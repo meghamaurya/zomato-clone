@@ -7,11 +7,28 @@
   right: 0;
   top: 0;
   left: 0;
+  height: fit-content;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar .open{
+  width: 100% !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar .smallScreen {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  overflow-x: hidden;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
 }
 .navbar .smallScreen .smallItem {
   display: flex;
@@ -32,13 +49,18 @@
 .navbar .smallScreen .smallItem .link {
   text-decoration: none;
   color: black;
+  width: fit-content;
 }
 
 .navbar .smallScreen .hamburger-cross,
-.navbar .smallScreen .hamburger-icon {
+.navbar .hamburger-icon {
   color: white;
   margin: 0;
   font-size: 1.8rem;
+}
+
+.navbar .hamburger-icon{
+  display: block;
 }
 
 .navbar .largeScreen {
@@ -52,6 +74,9 @@
 }
 
 @media (min-width: 768px) {
+  .navbar .hamburger-icon{
+    display: none;
+  }
   .navbar {
     padding: 1.5rem 3rem;
   }

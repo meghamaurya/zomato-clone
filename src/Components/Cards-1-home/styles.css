@@ -1,4 +1,4 @@
-.container {
+.Herocontainer {
     /* padding: 1rem 2rem; */
     padding: 3rem 1rem;
     display: grid;
@@ -6,7 +6,7 @@
     gap: 1.5rem;
 }
 
-.container .card {
+.Herocontainer .card {
     /* width: 100%; */
     border: 0.2px solid rgba(189, 189, 189, 0.537);
     border-radius: 0.8rem;
@@ -15,7 +15,7 @@
     text-decoration: none;
 }
 
-.container .card .card-img {
+.Herocontainer .card .card-img {
     height: 6rem;
     width: 100%;
     border-top-left-radius: 0.8rem;
@@ -23,7 +23,7 @@
     object-fit: cover;
 }
 
-.container .card .text {
+.Herocontainer .card .text {
     padding: 0.8rem;  
     padding-left: 0.6rem;
     padding-right: 0.6rem;
@@ -33,12 +33,12 @@
     flex-direction: column;
 }
 
-.container .card .p1 {
+.Herocontainer .card .p1 {
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-.container .card .p2 {
+.Herocontainer .card .p2 {
     font-size: 0.8rem;
     width: 100%;
     color: gray;
@@ -46,55 +46,55 @@
     border-bottom-right-radius: 0.8rem;
 }
 @media (max-width: 300px) {
-    .container{
+    .Herocontainer{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (min-width: 480px) {
-    .container{
+    .Herocontainer{
         grid-template-columns: repeat(3, 1fr);
         gap: 1.3rem;
         /* margin: 0.5rem ; */
         padding: 3rem 1rem;
     }
-    .container .card .text {
+    .Herocontainer .card .text {
        padding: 0.4rem;
     }
-    .container .card .p1 {
+    .Herocontainer .card .p1 {
        font-size: 0.7rem;
     }
 
-    .container .card .p2 {
+    .Herocontainer .card .p2 {
        font-size: 1rem;
      }
-    .container .card .card-img{
+    .Herocontainer .card .card-img{
        height: 10rem;
        width: 100%;
     }
 }
 @media (min-width: 1020px) {
-    .container{
+    .Herocontainer{
         gap: 1.5rem;
         padding: 3rem 5rem;
         /* margin: 1.6rem 10rem; */
     }
-    .container .card:hover {
+    .Herocontainer .card:hover {
         transform: scale(1.04);
     }
-    .container .card .text{
+    .Herocontainer .card .text{
         padding: 0.4rem 1rem 1rem;
         
     }
-    .container .card .card-img {
+    .Herocontainer .card .card-img {
         height: 10rem;
     }
-    .container .card .p1 {
+    .Herocontainer .card .p1 {
         font-size: 1.2rem;
         font-weight: 500;
      }
  
-     .container .card .p2 {
+     .Herocontainer .card .p2 {
         font-size: 1rem;
         padding-top: 0.4rem;
         font-weight: 400;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import './style.css';
 import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import List from './List';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -15,18 +15,18 @@ function Navbar() {
     }
     return (
         <nav className='navbar'>
-            <div className='smallScreen'>
-                {!isNavExpanded ?
-                    <IoMdMenu onClick={handleClick} className='hamburger-icon' />
-                    :
-                    null}
+            {!isNavExpanded ?
+                <IoMdMenu onClick={handleClick} className='hamburger-icon' />
+                :
+                null}
+            <div className={`smallScreen ${isNavExpanded && 'open'}`} >
                 {isNavExpanded ?
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
-                        <Link to="investorRelations">Investor Relations</Link>
-                        <List>Add restaurant</List>
-                        <List>Log in</List>
-                        <List>Sign up</List>
+                        <List link="/investorRelations" title='Investor Relations' />
+                        <List link="/" title='Add restaurant' />
+                        <List link='/login' title="Log in" />
+                        <List link='/login' title='Sign up' />
                     </div> : null}
 
             </div>
@@ -37,10 +37,10 @@ function Navbar() {
                     <MdOutlineSendToMobile /> <span>Get the App</span>
                 </Link>
                 <div className='item'>
-                    <Link to="/investorRelations">Investor Relations</Link>
-                    <List>Add restaurant</List>
-                    <List>Log in</List>
-                    <List>Sign up</List>
+                    <List link="/investorRelations" title='Investor Relations' />
+                    <List link="/" title='Add restaurant' />
+                    <List link='/login' title="Log in" />
+                    <List link='/login' title='Sign up' />
                 </div>
             </div> :
 
