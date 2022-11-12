@@ -2,7 +2,7 @@ import React from 'react'
 
 function Heading(props) {
   return (
-    <h2>{props.title}</h2>
+    <span className='heading'>{props.title}</span>
   )
 }
 

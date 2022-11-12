@@ -3,8 +3,10 @@ import React from 'react'
 function CircleItem(props) {
   return (
     <div className='CircleItem'>
+      <div className='Circle'>
         <img src={props.src} alt='' />
-        <span>{props.title}</span>
+      </div>
+      <span>{props.title}</span>
     </div>
   )
 }
