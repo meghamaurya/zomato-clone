@@ -1,4 +1,5 @@
 .detailsPage {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -16,10 +17,11 @@
 
 .detailsPage .Nav .Link {
     margin-right: auto;
+    width: 8rem;
 }
 
 .detailsPage .Nav .Link img {
-    width: 8rem;
+    width: 100%;
     margin-right: auto;
 }
 
@@ -65,32 +67,78 @@
 .detailsPage .Inspiration {
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     background-color: #F8F8F8;
+}
+
+.detailsPage .brands {
+    background-color: white;
+}
+
+.detailsPage .Inspiration .CircleCard::-webkit-scrollbar {
+    display: none;
+}
+
+.detailsPage .Inspiration .heading {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .detailsPage .Inspiration .CircleCard {
     display: flex;
     overflow-x: auto;
     gap: 2rem;
+    padding: 0.5rem;
+    width: 100%;
 }
 
 .detailsPage .Inspiration .CircleCard .CircleItem {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
+    padding: 0 0.25rem;
 }
 
-.detailsPage .Inspiration .CircleCard .CircleItem img {
-    width: 8rem;
+.detailsPage .Inspiration .CircleCard .CircleItem .Circle {
+    width: 5.5rem;
+    height: 5.5rem;
+    overflow: hidden;
     border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0.05rem solid rgb(230, 228, 228);
+}
+
+.detailsPage .Inspiration .CircleCard .CircleItem .Circle img {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .detailsPage .Inspiration .CircleCard .CircleItem span {
-    font-size: 1.1rem;
-    font-weight: 5;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+
+.detailsPage .Inspiration .CircleCard .CircleItem .time {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-top: 0rem;
+}
+
+@media (max-width: 300px) {
+    .detailsPage .Nav button {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -98,15 +146,19 @@
         padding: 1rem 5rem;
         box-shadow: none;
     }
+
     .detailsPage .Nav button {
         display: none;
     }
+
     .detailsPage .Nav .userIcon {
         display: none;
     }
+
     .detailsPage .Nav .rightLink {
         display: block;
     }
+
     .detailsPage .Delivery {
         padding: 0 5rem;
         display: flex;
@@ -122,6 +174,7 @@
         cursor: pointer;
         position: relative;
     }
+
     .detailsPage .Delivery .DeliveryItem img {
         width: 2.5rem;
         padding-left: 1.5rem;
@@ -140,6 +193,7 @@
         font-size: 1.1rem;
         font-weight: 500;
     }
+
     .detailsPage .Delivery .DeliveryItem .line {
         position: absolute;
         height: 0.15rem;
@@ -149,7 +203,22 @@
         border-radius: 2rem;
         transition: all 2s ease-in-out;
     }
+
     .detailsPage .Inspiration {
-        padding: 1rem 5rem;
+        padding: 2rem 5rem;
+    }
+
+    .detailsPage .Inspiration .CircleCard .CircleItem .Circle {
+        width: 9rem;
+        height: 9rem;
+        overflow: hidden;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        border: 0.05rem solid rgb(230, 228, 228);
+    }
+
+    .detailsPage .Inspiration .heading {
+        font-size: 1.7rem;
     }
 }
