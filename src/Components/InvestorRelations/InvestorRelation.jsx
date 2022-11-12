@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "./Carousel";
 import QuarterlyResult from "../IRQuarterlyResult/QR";
 import IRAboutUs from "../IRAboutUs/AboutUs";
-const InvestorRelation = () => {
+const InvestorRelations = () => {
   return (
     <div>
       <Carousel />
@@ -12,4 +12,4 @@ const InvestorRelation = () => {
   );
 };
 
-export default InvestorRelation;
+export default InvestorRelations;

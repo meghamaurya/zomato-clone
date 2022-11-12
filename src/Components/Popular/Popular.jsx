@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Popular.css';
 import { TfiAngleDown, TfiAngleRight } from 'react-icons/tfi'
+import { Link } from 'react-router-dom';
 
 
 const places = [
@@ -74,20 +75,20 @@ function Popular() {
             <span>Popular localities in and around <span className='city'>Agra</span></span>
             <div className='places'>
                 {places.map((element, index) => {
-                    return showMore ? <div key={`popular-${index}`} className='item'>
+                    return showMore ? <Link to='/agra' key={`popular-${index}`} className='item'>
                                 <div className='left'>
                                     <span>{element.name}</span>
                                     <span>{element.number} places</span>
                                 </div>
                                 <TfiAngleRight className='icon' />
-                            </div> : index < 8 ?
-                                <div key={`popular-${index}`} className='item'>
+                            </Link> : index < 8 ?
+                                <Link to='/agra' key={`popular-${index}`} className='item'>
                                     <div className='left'>
                                         <span>{element.name}</span>
                                         <span>{element.number} places</span>
                                     </div>
                                     <TfiAngleRight className='icon' />
-                                </div>
+                                </Link>
                                 : null
                 })}
                 {!showMore ? <div onClick={handleSeeMore} className='item more'>

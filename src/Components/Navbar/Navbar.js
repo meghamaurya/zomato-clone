@@ -5,16 +5,46 @@ import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import List from './List';
+
+
 function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
-    const [toggleIcon, setToggleIcon] = useState(false);
+
     const handleClick = () => {
         setIsNavExpanded(!isNavExpanded);
-        setToggleIcon(true);
     }
     return (
         <nav className='navbar'>
-            <div className='hamburger-heading'>
+            <div className='smallScreen'>
+                {!isNavExpanded ?
+                    <IoMdMenu onClick={handleClick} className='hamburger-icon' />
+                    :
+                    null}
+                {isNavExpanded ?
+                    <div className='smallItem'>
+                        <RiCloseLine onClick={handleClick} className='hamburger-cross' />
+                        <List>Investor Relations</List>
+                        <List>Add restaurant</List>
+                        <List>Log in</List>
+                        <List>Sign up</List>
+                    </div> : null}
+
+            </div>
+
+
+            <div className='largeScreen'>
+                <Link to='/' className='add'>
+                    <MdOutlineSendToMobile /> <span>Get the App</span>
+                </Link>
+                <div className='item'>
+                    <List>Investor Relations</List>
+                    <List>Add restaurant</List>
+                    <List>Log in</List>
+                    <List>Sign up</List>
+                </div>
+            </div> :
+
+            {/* <div className='hamburger-heading'>
                 <button className='hamburger'
                     onClick={handleClick} >
                     {isNavExpanded ?
@@ -35,28 +65,8 @@ function Navbar() {
                     <List>Add restaurant</List>
                     <List>Log in</List>
                     <List>Sign up</List>
-                    {/* <ul className='ul'>
-                        <li className='li'>
-                            <Link to="/" className='link'>Investor Relations</Link>
-                        </li>
-                    </ul>
-                    <ul className='ul'>
-                        <li className='li'>
-                            <Link to="/" className='link' >Add restaurant</Link>
-                        </li>
-                    </ul>
-                    <ul className='ul'>
-                        <li className='li'>
-                            <Link to="/" className='link'>Log in</Link>
-                        </li>
-                    </ul>
-                    <ul className='ul'>
-                        <li className='li'>
-                            <Link to="/" className='link'>Sign up</Link>
-                        </li>
-                    </ul> */}
                 </div>
-            </div>
+            </div> */}
         </nav>
     )
 }

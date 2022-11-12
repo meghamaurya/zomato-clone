@@ -5,10 +5,12 @@ import Popular from "../Popular/Popular";
 import Zomato from "../Zomato/Zomato";
 import Footer from "../Footer/Footer";
 import Explore from "../Explore/Explore";
+import Navbar from '../Navbar/Navbar'
 
 const HomePage = () => {
     return (
         <div>
+            <Navbar />
             <Hero />
             <Cards1 />
             <Cards2 />

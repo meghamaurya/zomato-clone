@@ -10,7 +10,9 @@
     /* width: 100%; */
     border: 0.2px solid rgba(189, 189, 189, 0.537);
     border-radius: 0.8rem;
-    transition: transform .2s;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .container .card .card-img {
