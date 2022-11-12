@@ -110,8 +110,9 @@
     .hero-image .hero-text .searchBar{
         width: 66%;
 }
-.hero-image .hero-text  .dropdown .location{
+    .hero-image .hero-text  .dropdown .location{
         padding-right: 5rem ;
     }
+    
 }
 

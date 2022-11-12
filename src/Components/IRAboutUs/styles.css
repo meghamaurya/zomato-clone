@@ -1,0 +1,12 @@
+.section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0 1rem;
+  background-color: rgba(68, 67, 67, 0.053);
+}
+.section .heading {
+  font-weight: 500;
+}
+/* .section .image {
+  
+} */

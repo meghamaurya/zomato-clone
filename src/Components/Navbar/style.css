@@ -84,10 +84,10 @@
 @media (max-width: 768px) {
     .navigation-menu .menu-link {
         position: absolute;
-        top: 5rem;
+        top: 3rem;
         left: 0;
         flex-direction: column;
-        width: 50%;
+        /* width: 50%; */
         z-index: 10;
         height: 197rem;
         background-color: white;

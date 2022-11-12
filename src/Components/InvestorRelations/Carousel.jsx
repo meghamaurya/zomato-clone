@@ -35,6 +35,7 @@ const Carousel = () => {
         {sliderImg.map(({ id, image, count, detail }) => (
           <div key={id} className="slide">
             <img src={image} alt="" className="image" width="100%" />
+
             <div className="detail">
               <div className="part1">
                 <h2 className="title">{count}</h2>
