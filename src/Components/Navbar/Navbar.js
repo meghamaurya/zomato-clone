@@ -23,7 +23,7 @@ function Navbar() {
                 {isNavExpanded ?
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
-                        <List>Investor Relations</List>
+                        <Link to="investorRelations">Investor Relations</Link>
                         <List>Add restaurant</List>
                         <List>Log in</List>
                         <List>Sign up</List>
@@ -37,7 +37,7 @@ function Navbar() {
                     <MdOutlineSendToMobile /> <span>Get the App</span>
                 </Link>
                 <div className='item'>
-                    <List>Investor Relations</List>
+                    <Link to="/investorRelations">Investor Relations</Link>
                     <List>Add restaurant</List>
                     <List>Log in</List>
                     <List>Sign up</List>
