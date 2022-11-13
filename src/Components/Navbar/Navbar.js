@@ -23,10 +23,10 @@ function Navbar() {
                 {isNavExpanded ?
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
-                        <Link to="investorRelations">Investor Relations</Link>
-                        <List>Add restaurant</List>
-                        <List>Log in</List>
-                        <List>Sign up</List>
+                        <Link to="investorRelations" className="link">Investor Relations</Link>
+                        <Link to="" className="link">Add restaurant</Link>
+                        <Link to="" className="link" >Log in</Link>
+                        <Link to="" className="link">Sign up</Link>
                     </div> : null}
 
             </div>
@@ -37,10 +37,10 @@ function Navbar() {
                     <MdOutlineSendToMobile /> <span>Get the App</span>
                 </Link>
                 <div className='item'>
-                    <Link to="/investorRelations">Investor Relations</Link>
-                    <List>Add restaurant</List>
-                    <List>Log in</List>
-                    <List>Sign up</List>
+                    <Link to="/investorRelations" className="link">Investor Relations</Link>
+                    <Link to="" className="link">Add restaurant</Link>
+                    <Link to="" className="link">Log in</Link>
+                    <Link to="" className="link">Sign up</Link>
                 </div>
             </div> :
 
