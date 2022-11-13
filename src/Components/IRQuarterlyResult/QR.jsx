@@ -8,7 +8,7 @@ const QuarterlyResult = () => {
     <div className="container">
       <h2 className="heading">Quarterly results</h2>
       <h3 className="year">Q2 FY23</h3>
-      <div>
+      <div className="btnHolder">
         <Btn1> Shareholders' Letter</Btn1>
         <Btn1> Earnings Call Replay</Btn1>
       </div>

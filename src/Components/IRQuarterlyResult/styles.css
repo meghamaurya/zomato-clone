@@ -1,9 +1,11 @@
 .container {
-  display: grid;
-  grid-template-columns: auto;
-  /* flex-direction: column; */
-  padding-top: 0;
+  /* display: grid;
+  grid-template-columns: repeat(1, 1fr); */
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
   color: rgb(10, 10, 10);
+  padding: 0rem 16rem 1rem 3rem;
 }
 
 .container .heading {
@@ -20,14 +22,17 @@
   margin-block-start: 0;
   color: rgb(125, 124, 124);
 }
-
+.container .btnHolder {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
 .container .btn1 {
   display: flex;
   max-width: fit-content;
   background-color: rgba(68, 67, 67, 0.053);
   border: none;
   border-radius: 0.4rem;
-  padding: 0.8rem;
+  /* padding: 0.8rem; */
   margin-bottom: 0.8rem;
   color: rgb(10, 10, 10);
 }
@@ -41,8 +46,17 @@
   .container .year {
     font-size: x-large;
   }
+  .container .btnHolder {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
 
   .container .btn1 {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 1130px) {
+  .container .btnHolder {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
