@@ -11,7 +11,7 @@ function FoodCards() {
             <div className='FoodContainer'>
                 {FoodData.map((item, index) => {
                     return (
-                        <Link to='/' className='Cards' key={`foodCard-${index}`}>
+                        <Link to='/agra' className='Cards' key={`foodCard-${index}`}>
                             <div className='image'>
                                 <img src={item.img} alt='' />
                                 {item.proDiscount && <span className='pro'>{item.proDiscount}</span>}

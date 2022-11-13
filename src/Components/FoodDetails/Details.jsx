@@ -56,7 +56,9 @@ function Details() {
                     })}
                 </div>
             </div>
+            <div className='foood'>
             <FoodCards />
+            </div>
         </div>
     )
 }

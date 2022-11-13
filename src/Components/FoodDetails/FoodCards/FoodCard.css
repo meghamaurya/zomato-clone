@@ -2,14 +2,16 @@
     padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .FoodCards .FoodContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
 }
 
 .FoodCards .FoodContainer .Cards {
@@ -23,7 +25,6 @@
     border-radius: 1rem;
     border: 0.15rem solid white;
     cursor: pointer;
-    box-sizing: content-box;
 }
 
 .FoodCards .FoodContainer .Cards:hover {
@@ -151,18 +152,19 @@
     font-size: 0.85rem;
 }
 
-@media (max-width: 500) {
+@media (min-width: 500px) {
     .FoodCards .FoodContainer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .FoodCards {
         padding: 1rem 5rem;
     }
 
     .FoodCards .FoodContainer {
         grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
     }
 }
