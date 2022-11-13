@@ -11,7 +11,7 @@ const IRAboutUs = () => {
         className="image"
       />
       {/* <div className="description"> */}
-      <p className="para">
+      <span className="para">
         Zomato’s mission is better food for more people. Started in 2010, Zomato
         offers services like restaurant search & discovery, reviews, home
         delivery of food, online table reservation, and digital payments when
@@ -22,7 +22,7 @@ const IRAboutUs = () => {
         has been focusing on providing transparent and flexible earning
         opportunities to its delivery fleet, and contributing towards a more
         sustainable society through its non-profit entity Feeding India.
-      </p>
+      </span>
       {/* </div> */}
     </section>
   );
