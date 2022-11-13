@@ -30,6 +30,7 @@ function FoodCards() {
                             <div className='line'></div>
                             <div className='order'>
                                 <img src='https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png' alt='' />
+                                <span>{item.recentOrder}+ orders placed from here recently</span>
                             </div>
                         </Link>
                     )

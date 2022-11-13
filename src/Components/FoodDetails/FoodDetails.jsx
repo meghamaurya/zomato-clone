@@ -6,12 +6,12 @@ import Details from './Details'
 
 function FoodDetails() {
     return (
-        <div>
+        <>
             <Details />
             <Cards2 />
             <Explore />
             <Footer />
-        </div>
+        </>
     )
 }
 

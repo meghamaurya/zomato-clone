@@ -2,6 +2,8 @@
     padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .FoodCards .FoodContainer {
@@ -15,12 +17,13 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    height: 20rem;
+    height: 23rem;
     padding: 0.5rem;
     background: white;
     border-radius: 1rem;
     border: 0.15rem solid white;
     cursor: pointer;
+    box-sizing: content-box;
 }
 
 .FoodCards .FoodContainer .Cards:hover {
@@ -93,6 +96,7 @@
     width: 100%;
     height: 80%;
     position: relative;
+    overflow: hidden;
 }
 
 .FoodCards .FoodContainer .Cards .image .discount,
@@ -120,6 +124,38 @@
     border-radius: 1rem;
 }
 
+.FoodCards .FoodContainer .Cards .line {
+    width: 100%;
+    height: 0.12rem;
+    border-radius: 1rem;
+    background-color: rgb(240, 238, 238);
+    margin: 0.3rem 0;
+    margin-bottom: 0.8rem;
+}
+
+.FoodCards .FoodContainer .Cards .order {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.FoodCards .FoodContainer .Cards .order img {
+    height: 1rem;
+    object-fit: cover;
+}
+
+.FoodCards .FoodContainer .Cards .order span{
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 500) {
+    .FoodCards .FoodContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (min-width: 768px) {
     .FoodCards {
