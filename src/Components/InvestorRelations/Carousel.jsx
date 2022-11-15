@@ -30,7 +30,7 @@ const Carousel = () => {
       <p style={{ fontSize: "1rem" }}>slider</p>
       <div
         className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }}
       >
         {sliderImg.map(({ id, image, count, detail }) => (
           <div key={id} className="slide">
