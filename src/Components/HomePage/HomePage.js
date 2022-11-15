@@ -9,15 +9,17 @@ import Navbar from '../Navbar/Navbar'
 import Signup from '../Signup/Signup';
 import './Homepage.css'
 import { useState } from "react";
+import Login from "../Login/Login";
 
 
 const HomePage = () => {
     const [signup, setSignUp] = useState(false)
-
+    const [login, setLogin] = useState(false)
     return (
         <div className='homepage'>
-            <Navbar signup={signup} setSignUp={setSignUp} />
+            <Navbar signup={signup} setSignUp={setSignUp} login={login} setLogin={setLogin} />
             {signup ? <Signup signup={signup} setSignUp={setSignUp} /> : null}
+            {login ? <Login login={login} setLogin={setLogin} /> : null}
             <Hero />
             <Cards1 />
             <Cards2 />

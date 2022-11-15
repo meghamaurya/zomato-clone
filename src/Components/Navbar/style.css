@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: transparent;
     position: absolute;
     padding: 1rem;
@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .navbar .smallScreen .smallItem {
     display: flex;
     padding: 1.5rem 1rem;
@@ -25,6 +26,7 @@
     right: 0;
     bottom: 0;
 }
+
 .navbar .smallScreen .smallItem .hamburger-cross {
     color: black;
 }
@@ -34,9 +36,16 @@
     color: black;
     border: none;
     background: none;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    font-family: 'Kumbh Sans', 'Red Hat Display';
 }
 
-.navbar .smallScreen .hamburger-cross, .navbar .smallScreen .hamburger-icon {
+.navbar .smallScreen .hamburger-cross,
+.navbar .smallScreen .hamburger-icon {
     color: white;
     margin: 0;
     font-size: 1.8rem;
@@ -53,12 +62,14 @@
 }
 
 @media (min-width: 768px) {
-    .navbar{
+    .navbar {
         padding: 1.5rem 3rem;
     }
+
     .navbar .smallScreen {
         display: none;
     }
+
     .navbar .largeScreen {
         width: 100%;
         display: flex;
@@ -67,6 +78,7 @@
         align-items: center;
         gap: 2rem;
     }
+
     .navbar .largeScreen .add {
         text-decoration: none;
         color: white;
@@ -74,16 +86,22 @@
         gap: 0.2rem;
         align-items: center;
     }
+
     .navbar .largeScreen .item {
         display: flex;
         gap: 2rem;
     }
+
     .navbar .largeScreen .item .link {
         text-decoration: none;
         color: white;
         border: none;
         background: none;
+        width: fit-content;
+        font-weight: 400;
         font-size: 1rem;
         cursor: pointer;
+        padding: 0;
+        font-family: 'Kumbh Sans', 'Red Hat Display';
     }
 }

@@ -1,19 +1,19 @@
 import React from 'react';
 import Button from '../Navbar/Button';
-import './Signup.css';
+import './Login.css';
 import { IoCloseSharp } from 'react-icons/io5'
 import Input from './Input';
 import ButtonSign from './ButtonSign';
 
-function Signup(props) {
+function Login(props) {
   const handleClick = () => {
-    props.setSignUp(!props.signup)
+    props.setLogin(!props.login);
   }
   return (
     <div className='Signup'>
       <div className='card'>
         <div className='top'>
-          <span>Sign up</span>
+          <span>Login</span>
           <Button click={handleClick} title={<IoCloseSharp />} />
         </div>
         <Input placeholder='Full Name' />
@@ -38,4 +38,4 @@ function Signup(props) {
   )
 }
 
-export default Signup;
+export default Login;

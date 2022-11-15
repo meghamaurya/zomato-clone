@@ -17,6 +17,12 @@ function Navbar(props) {
 
     const handleSignUp = () => {
         props.setSignUp(!props.signup);
+        setIsNavExpanded(!isNavExpanded);
+    }
+
+    const handleLogin = () => {
+        props.setLogin(!props.login);
+        setIsNavExpanded(!isNavExpanded);
     }
 
     return (
@@ -30,9 +36,9 @@ function Navbar(props) {
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
                         <List>Investor Relations</List>
-                        <List>Add restaurant</List>
-                        <List>Log in</List>
-                        <List>Sign up</List>
+                        <List>Add Restaurant</List>
+                        <Button click={handleLogin} title='Log in' />
+                        <Button click={handleSignUp} title='Sign up' />
                     </div> : null}
 
             </div>
@@ -44,8 +50,8 @@ function Navbar(props) {
                 </Link>
                 <div className='item'>
                     <List>Investor Relations</List>
-                    <List>Add restaurant</List>
-                    <List>Log in</List>
+                    <List>Add Restaurant</List>
+                    <Button click={handleLogin} title='Log in' />
                     <Button click={handleSignUp} title='Sign up' />
                 </div>
             </div> :
