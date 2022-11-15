@@ -32,6 +32,8 @@
 .navbar .smallScreen .smallItem .link {
     text-decoration: none;
     color: black;
+    border: none;
+    background: none;
 }
 
 .navbar .smallScreen .hamburger-cross, .navbar .smallScreen .hamburger-icon {
@@ -79,5 +81,9 @@
     .navbar .largeScreen .item .link {
         text-decoration: none;
         color: white;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        cursor: pointer;
     }
 }
