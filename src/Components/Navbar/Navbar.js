@@ -4,15 +4,26 @@ import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import List from './List';
-import { Link } from 'react-router-dom';
+import Button from './Button';
 
 
-function Navbar() {
+function Navbar(props) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     const handleClick = () => {
         setIsNavExpanded(!isNavExpanded);
     }
+
+    const handleSignUp = () => {
+        props.setSignUp(!props.signup);
+        setIsNavExpanded(!isNavExpanded);
+    }
+
+    const handleLogin = () => {
+        props.setLogin(!props.login);
+        setIsNavExpanded(!isNavExpanded);
+    }
+
     return (
         <nav className='navbar'>
             {!isNavExpanded ?
@@ -23,10 +34,10 @@ function Navbar() {
                 {isNavExpanded ?
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
-                        <List link="/investorRelations" title='Investor Relations' />
-                        <List link="/" title='Add restaurant' />
-                        <List link='/login' title="Log in" />
-                        <List link='/login' title='Sign up' />
+                        <List>Investor Relations</List>
+                        <List>Add Restaurant</List>
+                        <Button click={handleLogin} title='Log in' />
+                        <Button click={handleSignUp} title='Sign up' />
                     </div> : null}
 
             </div>
@@ -37,10 +48,10 @@ function Navbar() {
                     <MdOutlineSendToMobile /> <span>Get the App</span>
                 </Link>
                 <div className='item'>
-                    <List link="/investorRelations" title='Investor Relations' />
-                    <List link="/" title='Add restaurant' />
-                    <List link='/login' title="Log in" />
-                    <List link='/login' title='Sign up' />
+                    <List>Investor Relations</List>
+                    <List>Add Restaurant</List>
+                    <Button click={handleLogin} title='Log in' />
+                    <Button click={handleSignUp} title='Sign up' />
                 </div>
             </div> :
 
