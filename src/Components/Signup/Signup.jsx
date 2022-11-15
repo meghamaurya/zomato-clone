@@ -4,6 +4,7 @@ import './Signup.css';
 import { IoCloseSharp } from 'react-icons/io5'
 import Input from './Input';
 import ButtonSign from './ButtonSign';
+import { FcGoogle } from 'react-icons/fc'
 
 function Signup(props) {
   const handleClick = () => {
@@ -29,6 +30,10 @@ function Signup(props) {
           <span>or</span>
           <div className='line'></div>
         </div>
+        <button className='google'>
+          <FcGoogle className='icon' />
+          Continue with Google
+        </button>
         <div className='AlreadyAccount'>
           <span>Already have an account ?</span>
           <span>Log in</span>

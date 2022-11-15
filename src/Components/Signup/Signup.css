@@ -128,7 +128,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    margin: 1.5rem 0;
+    margin: 0.7rem 0;
 }
 
 .Signup .card .option span {
@@ -151,6 +151,28 @@
     font-size: 0.95rem;
 }
 
+.Signup .card .google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+    padding: 0.6rem 0.85rem;
+    border: 0.12rem solid #9C9C9C;
+    border-radius: 0.4rem;
+    color: white;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #7B7B7B;   
+}
+
+.Signup .card .google .icon {
+    font-size: 1.5rem;
+}
+
 .Signup .card .AlreadyAccount span:last-child {
     color: #ED5A6B;
     cursor: pointer;
@@ -160,5 +182,9 @@
 @media(min-width: 768px) {
     .Signup .card {
         width: 38%;
+    }
+    .Signup .card .checkbox input {
+        width: 1.5rem !important;
+        height: 1.4rem !important;
     }
 }
