@@ -6,11 +6,18 @@ import Zomato from "../Zomato/Zomato";
 import Footer from "../Footer/Footer";
 import Explore from "../Explore/Explore";
 import Navbar from '../Navbar/Navbar'
+import Signup from '../Signup/Signup';
+import './Homepage.css'
+import { useState } from "react";
+
 
 const HomePage = () => {
+    const [signup, setSignUp] = useState(false)
+
     return (
-        <div>
-            <Navbar />
+        <div className='homepage'>
+            <Navbar signup={signup} setSignUp={setSignUp} />
+            {signup ? <Signup signup={signup} setSignUp={setSignUp} /> : null}
             <Hero />
             <Cards1 />
             <Cards2 />

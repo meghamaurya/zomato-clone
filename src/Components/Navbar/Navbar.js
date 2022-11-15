@@ -5,20 +5,18 @@ import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import List from './List';
-import Signup from '../Signup/Signup';
 import Button from './Button';
 
 
-function Navbar() {
+function Navbar(props) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
-    const [signup, setSignUp] = useState(false)
 
     const handleClick = () => {
         setIsNavExpanded(!isNavExpanded);
     }
 
-    const handleSignup = () => {
-        setSignUp(true)
+    const handleSignUp = () => {
+        props.setSignUp(!props.signup);
     }
 
     return (
@@ -48,7 +46,7 @@ function Navbar() {
                     <List>Investor Relations</List>
                     <List>Add restaurant</List>
                     <List>Log in</List>
-                    <Button click={handleSignup} title='Sign up' />
+                    <Button click={handleSignUp} title='Sign up' />
                 </div>
             </div> :
 
@@ -75,8 +73,6 @@ function Navbar() {
                     <List>Sign up</List>
                 </div>
             </div> */}
-
-            {signup ? <Signup /> : null}
         </nav>
     )
 }
