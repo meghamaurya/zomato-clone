@@ -3,7 +3,8 @@ import Button from '../Navbar/Button';
 import './Signup.css';
 import { IoCloseSharp } from 'react-icons/io5'
 import Input from './Input';
-import { FcGoogle } from 'react-icons/fc'
+import { FcGoogle } from 'react-icons/fc';
+import { FaCheck } from 'react-icons/fa'
 
 function Signup(props) {
   const handleClick = () => {
@@ -20,8 +21,10 @@ function Signup(props) {
           <Input placeholder='Full Name' />
           <Input placeholder='Email' />
           <label className='checkbox'>
-            <input type='checkbox' />
-
+            <div className='input'>
+              <input type='checkbox' />
+              <FaCheck className='Check-icon' />
+            </div>
             <span>I agree to Zomato's <span className='red'>Terms of Service, Privacy Policy</span> and <span className='red'>Content Policies</span></span>
           </label>
           <span className='signButton' >Create account</span>

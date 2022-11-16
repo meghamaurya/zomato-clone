@@ -84,17 +84,16 @@
     align-items: center;
 }
 
-.Signup .SignUpcard .data .checkbox input {
+.Signup .SignUpcard .data .checkbox .input input {
     appearance: none;
-    width: 30px;
-    height: 22px;
+    width: 1.5rem;
+    height: 1.5rem;
     background: none;
     margin-right: 0.5rem;
     border: 0.18rem solid #CFCFCF;
     border-radius: 0.3rem;
     cursor: pointer;
     outline: none;
-    position: relative;
 }
 
 .Signup .SignUpcard .data .checkbox input:checked {
@@ -102,7 +101,7 @@
 }
 
 .Signup .SignUpcard .data .checkbox input:checked::after {
-    content: 'h';
+    content: '';
     color: #ED5A6B;
     position: absolute;
     top: 50%;
@@ -114,10 +113,29 @@
     display: inline;
     margin: auto;
     font-weight: 500;
+    text-align: left;
+    width: 100%;
 }
 
 .Signup .SignUpcard .data .checkbox .red {
     color: #ED5A6B;
+}
+
+.Signup .SignUpcard .data .checkbox .input {
+    position: relative;
+}
+
+.Signup .SignUpcard .data .checkbox .Check-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(65%, 55%);
+    display: none;
+    color: #ED5A6B;
+}
+
+.Signup .SignUpcard .data .checkbox input:checked ~ .Check-icon {
+    display: block;
 }
 
 .Signup .SignUpcard .data .inputField::placeholder {
@@ -204,6 +222,6 @@
     }
     .Signup .SignUpcard .data .checkbox input {
         width: 1.5rem !important;
-        height: 1.4rem !important;
+        height: 1.5rem !important;
     }
 }
