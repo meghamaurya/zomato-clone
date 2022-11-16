@@ -75,7 +75,7 @@
 }
 @media (min-width: 768px) {
   .slideshow .slideshowSlider .slide .detail {
-    translate: 0rem -12rem;
+    translate: 2rem -12rem;
     padding-left: 12rem;
   }
 
@@ -89,7 +89,7 @@
   .slideshow .slideshowSlider .slide .detail .part2 {
     color: rgba(255, 255, 255, 0.695);
     font-size: 0.9rem;
-    translate: -5rem;
+    translate: -7rem;
   }
   .slideshowDots .dot {
     opacity: 0.6;

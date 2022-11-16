@@ -1,11 +1,13 @@
 .container {
-  /* display: grid;
-  grid-template-columns: repeat(1, 1fr); */
-  display: flex;
-  flex-direction: column;
-  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* display: flex;
+  flex-direction: column; */
+  width: 56vw;
+  margin: auto;
   color: rgb(10, 10, 10);
   padding: 0rem 16rem 1rem 3rem;
+  translate: 0 -4rem;
 }
 
 .container .heading {
@@ -36,8 +38,17 @@
   margin-bottom: 0.8rem;
   color: rgb(10, 10, 10);
 }
+@media (max-width: 300px) {
+  .container {
+    width: 100vw;
+    padding: 1px;
+  }
+}
 
 @media (min-width: 768px) {
+  .container {
+    padding: 0rem rem;
+  }
   .container .heading {
     font-size: 2rem;
     margin-block-end: 1rem;
