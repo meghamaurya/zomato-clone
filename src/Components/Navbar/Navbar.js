@@ -55,7 +55,7 @@ function Navbar(props) {
                     <Button click={handleLogin} title='Log in' />
                     <Button click={handleSignUp} title='Sign up' />
                 </div>
-            </div> :
+            </div>
 
             {/* <div className='hamburger-heading'>
                 <button className='hamburger'
