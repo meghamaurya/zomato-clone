@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import Button from '../Navbar/Button';
 import './Login.css';
 import { IoCloseSharp } from 'react-icons/io5'
@@ -38,4 +38,4 @@ function Login(props) {
   )
 }
 
-export default Login;
+export default Login; */

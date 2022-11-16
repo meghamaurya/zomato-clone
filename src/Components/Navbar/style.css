@@ -84,6 +84,8 @@
   }
     .navbar {
         padding: 1.5rem 3rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .navbar .smallScreen {
@@ -96,7 +98,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .navbar .largeScreen .add {
@@ -105,11 +107,14 @@
         display: flex;
         gap: 0.2rem;
         align-items: center;
+        width: 50%;
     }
 
     .navbar .largeScreen .item {
         display: flex;
         gap: 2rem;
+        width: 100%;
+        justify-content: flex-end;
     }
 
     .navbar .largeScreen .item .link {
