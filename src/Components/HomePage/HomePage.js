@@ -18,8 +18,8 @@ const HomePage = () => {
     return (
         <div className='homepage'>
             <Navbar signup={signup} setSignUp={setSignUp} login={login} setLogin={setLogin} />
-            {signup ? <Signup signup={signup} setSignUp={setSignUp} /> : null}
-            {login ? <Login login={login} setLogin={setLogin} /> : null}
+            {signup ? <Signup login={login} setLogin={setLogin} signup={signup} setSignUp={setSignUp} /> : null}
+            {login ? <Login login={login} setLogin={setLogin} signup={signup} setSignUp={setSignUp} /> : null}
             <Hero />
             <Cards1 />
             <Cards2 />

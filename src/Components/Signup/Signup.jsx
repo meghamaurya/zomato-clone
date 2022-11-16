@@ -10,6 +10,11 @@ function Signup(props) {
   const handleClick = () => {
     props.setSignUp(!props.signup)
   }
+
+  const handleLogin = () => {
+    props.setLogin(!props.login);
+    props.setSignUp(!props.signup)
+  }
   return (
     <div className='Signup'>
       <div className='SignUpcard'>
@@ -37,7 +42,7 @@ function Signup(props) {
             <FcGoogle className='icon' />
             Continue with Google
           </span>
-          <div className='AlreadyAccount'>
+          <div onClick={handleLogin} className='AlreadyAccount'>
             <span>Already have an account ?</span>
             <span>Log in</span>
           </div>
