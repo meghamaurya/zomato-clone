@@ -26,7 +26,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 1.4rem;
+    padding: 0 1.4rem;
     transition: all 1s ease-in-out;
 }
 
@@ -34,6 +34,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: fit-content;
+    padding: 0;
 }
 
 .Signup .card .top span {
@@ -44,14 +46,16 @@
 
 .Signup .card .top .link {
     border: none;
-    background: none;
     cursor: pointer;
     font-size: 1.5rem;
     color: black;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    background: none;
 }
 
 .Signup .card .inputField {
-    margin-top: 0;
     border-radius: 0.4rem;
     padding: 0.85rem;
     border: 0.125rem solid #CFCFCF;
@@ -113,6 +117,7 @@
 
 .Signup .card .signButton {
     border: none;
+    width: 100%;
     margin-top: 1rem;
     padding: 0.85rem;
     background: #9C9C9C;
@@ -149,6 +154,7 @@
     display: flex;
     gap: 0.6rem;
     font-size: 0.95rem;
+    width: 100%;
 }
 
 .Signup .card .google {
@@ -166,7 +172,9 @@
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    color: #7B7B7B;   
+    color: #7B7B7B;
+    width: 96rem;
+    background: red;
 }
 
 .Signup .card .google .icon {
