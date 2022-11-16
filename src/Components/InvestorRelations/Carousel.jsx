@@ -32,10 +32,10 @@ const Carousel = () => {
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }}
       >
-        {sliderImg.map(({ id, image, count, detail }) => (
+        {sliderImg.map(({ id, desktopimage, mobileimage, count, detail }) => (
           <div key={id} className="slide">
-            <img src={image} alt="" className="image" width="100%" />
-
+            <img src={desktopimage} alt="" className="image" width="100%" />
+            {/* <img src={mobileimage} alt="" className="image" width="100%" /> */}
             <div className="detail">
               <div className="part1">
                 <h2 className="title">{count}</h2>
