@@ -1,0 +1,85 @@
+.investorNavbar {
+  /* background-color: white;
+  position: absolute;
+  z-index: 20; */
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+.investorNavbar .smallScreen {
+  display: flex;
+  flex-direction: column;
+}
+.investorNavbar .smallScreen .smallItem {
+  display: flex;
+  padding: 1.5rem 1rem;
+  gap: 1rem;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+}
+.investorNavbar .smallScreen .smallItem .hamburger-cross {
+  color: black;
+}
+
+.investorNavbar .smallScreen .smallItem .link {
+  text-decoration: none;
+  color: black;
+}
+
+.investorNavbar .smallScreen .hamburger-cross,
+.investorNavbar .smallScreen .hamburger-icon {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.investorNavbar .largeScreen {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .investorNavbar {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .investorNavbar {
+    padding: 1.5rem 3rem;
+  }
+  .investorNavbar .smallScreen {
+    display: none;
+  }
+  .investorNavbar .largeScreen {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .investorNavbar .largeScreen .add {
+    text-decoration: none;
+    /* color: white; */
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+  }
+  .investorNavbar .largeScreen .item {
+    display: flex;
+    gap: 2rem;
+  }
+  .investorNavbar .largeScreen .item .link {
+    text-decoration: none;
+    color: #151515;
+  }
+}
