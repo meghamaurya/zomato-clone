@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const List = ({ children }) => {
+const List = (props) => {
     return (
-        <Link to="/" className='link' >{children}</Link>
+        <Link to={props.link} className='link' >{props.title}</Link>
     )
 }
 export default List;

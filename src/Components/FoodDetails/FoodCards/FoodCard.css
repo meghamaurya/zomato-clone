@@ -1,0 +1,170 @@
+.FoodCards {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.FoodCards .FoodContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+}
+
+.FoodCards .FoodContainer .Cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 23rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 1rem;
+    border: 0.15rem solid white;
+    cursor: pointer;
+}
+
+.FoodCards .FoodContainer .Cards:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-color: rgb(236, 233, 233);
+}
+
+.FoodCards .FoodContainer .Cards .data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.7rem 0;
+    gap: 1rem;
+}
+
+.FoodCards .FoodContainer .Cards .data .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-column: span 2 / span 2;
+}
+
+.FoodCards .FoodContainer .Cards .data .left span {
+    color: rgb(105, 105, 105);
+    overflow-x: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.FoodCards .FoodContainer .Cards .data .right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-end;
+    color: rgb(105, 105, 105);
+}
+
+.FoodCards .FoodContainer .Cards .data .right span {
+    color: #696969;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.FoodCards .FoodContainer .Cards .data .right span .icon {
+    margin: auto;
+    font-size: 0.7rem;
+}
+
+.FoodCards .FoodContainer .Cards .data .right span:first-child {
+    background: #267E3E;
+    color: white;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0.35rem;
+}
+
+.FoodCards .FoodContainer .Cards .data .left .title {
+    font-size: 1.1rem;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+.FoodCards .FoodContainer .Cards .image {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.FoodCards .FoodContainer .Cards .image .discount,
+.FoodCards .FoodContainer .Cards .image .pro {
+    position: absolute;
+    bottom: 1rem;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.85rem;
+    left: 0;
+    color: white;
+    background: #256FEF;
+}
+
+.FoodCards .FoodContainer .Cards .image .pro {
+    background: #D92662 !important;
+    bottom: 3rem;
+}
+
+
+
+.FoodCards .FoodContainer .Cards .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.FoodCards .FoodContainer .Cards .line {
+    width: 100%;
+    height: 0.12rem;
+    border-radius: 1rem;
+    background-color: rgb(240, 238, 238);
+    margin: 0.3rem 0;
+    margin-bottom: 0.8rem;
+}
+
+.FoodCards .FoodContainer .Cards .order {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.FoodCards .FoodContainer .Cards .order img {
+    height: 1rem;
+    object-fit: cover;
+}
+
+.FoodCards .FoodContainer .Cards .order span{
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+
+@media (min-width: 500px) {
+    .FoodCards .FoodContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .FoodCards {
+        padding: 1rem 5rem;
+    }
+
+    .FoodCards .FoodContainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}

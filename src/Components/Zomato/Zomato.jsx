@@ -34,7 +34,7 @@ function Zomato() {
         </div>
         <div className='send'>
           <input onChange={(e) => setValue(e.target.value)} value={value} className={sendType === 'Phone' ? 'Phone' : ''} type='text' placeholder={sendType === 'Email' ? 'Email' : 'Type Here'} />
-          <button></button>
+          <button className='btn'></button>
           {sendType === 'Phone' ? <span onClick={() => setOpenCode(!openCode)}>+{selectCountry} <TfiAngleDown className='icon' /></span> : null}
           {openCode && sendType === 'Phone' ? <div className='phoneCode'>
             {countryCode.map((item, index) => {

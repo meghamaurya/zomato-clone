@@ -1,33 +1,46 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import './style.css';
+import { Link } from 'react-router-dom';
 import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import List from './List';
+import Button from './Button';
 
 
-function Navbar() {
+function Navbar(props) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     const handleClick = () => {
         setIsNavExpanded(!isNavExpanded);
     }
+
+    const handleSignUp = () => {
+        props.setSignUp(!props.signup);
+        setIsNavExpanded(!isNavExpanded);
+    }
+
+    const handleLogin = () => {
+        props.setLogin(!props.login);
+        setIsNavExpanded(!isNavExpanded);
+    }
+
     return (
         <nav className='navbar'>
-            <div className='smallScreen'>
-                {!isNavExpanded ?
-                    <IoMdMenu onClick={handleClick} className='hamburger-icon' />
-                    :
-                    null}
+            {!isNavExpanded ?
+                <IoMdMenu onClick={handleClick} className='hamburger-icon' />
+                :
+                null}
+            <div className={`smallScreen ${isNavExpanded && 'open'}`} >
                 {isNavExpanded ?
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
-                        <Link to="investorRelations" className="link">Investor Relations</Link>
-                        <Link to="" className="link">Add restaurant</Link>
-                        <Link to="" className="link" >Log in</Link>
-                        <Link to="" className="link">Sign up</Link>
+                        <List link='/investorRelations' title='Investor Relations' />
+                        <List link='/' title='Add Restaurant' />
+                        <Button click={handleLogin} title='Log in' />
+                        <Button click={handleSignUp} title='Sign up' />
                     </div> : null}
+
 
             </div>
 
@@ -37,12 +50,12 @@ function Navbar() {
                     <MdOutlineSendToMobile /> <span>Get the App</span>
                 </Link>
                 <div className='item'>
-                    <Link to="/investorRelations" className="link">Investor Relations</Link>
-                    <Link to="" className="link">Add restaurant</Link>
-                    <Link to="" className="link">Log in</Link>
-                    <Link to="" className="link">Sign up</Link>
+                    <List link='/investorRelations' title='Investor Relations' />
+                    <List link='/' title='Add Restaurant' />
+                    <Button click={handleLogin} title='Log in' />
+                    <Button click={handleSignUp} title='Sign up' />
                 </div>
-            </div> :
+            </div>
 
             {/* <div className='hamburger-heading'>
                 <button className='hamburger'
