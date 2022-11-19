@@ -4,6 +4,7 @@ import "./styles.css";
 import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from "react-icons/md";
+import Title from "./Title";
 
 function InvestorNavbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -14,6 +15,7 @@ function InvestorNavbar() {
   return (
     <nav className="investorNavbar">
       <div className="smallScreen">
+        <Title />
         {!isNavExpanded ? (
           <IoMdMenu onClick={handleClick} className="hamburger-icon" />
         ) : null}
@@ -40,13 +42,15 @@ function InvestorNavbar() {
       </div>
 
       <div className="largeScreen">
-        <Link to="/" className="add">
+        <Title />
+        {/* <Link to="/" className="add">
           <img
             src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
             width="120rem"
+            alt=""
           />
-          <span>| Investor Relations</span>
-        </Link>
+          <span className="heading">| Investor Relations</span>
+        </Link> */}
         <div className="item">
           <Link to="/investorRelations" className="link">
             Investor Relations

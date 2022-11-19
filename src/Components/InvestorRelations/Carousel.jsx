@@ -27,7 +27,6 @@ const Carousel = () => {
 
   return (
     <div className="slideshow">
-      <p style={{ fontSize: "1rem" }}>slider</p>
       <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }}

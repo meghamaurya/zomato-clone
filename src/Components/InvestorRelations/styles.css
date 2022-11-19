@@ -2,7 +2,6 @@
 .slideshow {
   margin: 0 auto;
   overflow: hidden;
-  /* position: relative; */
 }
 .slideshow .slideshowSlider {
   white-space: nowrap;
