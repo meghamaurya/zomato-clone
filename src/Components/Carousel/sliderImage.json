@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "desktopimage": "https://b.zmtcdn.com/data/o2_assets/84fc79475823b0e2d92f0580511bb2dc1655110685.png",
+        "mobileimage" : "https://b.zmtcdn.com/data/o2_assets/91ef6ca95d195a42026da98d799115541654852949.png",
+        "count": "535 million",
+        "detail": "Orders Delivered*"
+    },
+    {
+        "id": 2,
+        "desktopimage": "https://b.zmtcdn.com/data/o2_assets/aeb6af45a95c660af52ec7945fb5cc771655110784.png",
+        "mobileimage" : "https://b.zmtcdn.com/data/o2_assets/8cb4b81d82000ab999a9531671dce0401654852977.png",
+        "count": "₹213 billion",
+        "detail": "Gross over value*"
+    },
+    {
+        "id": 3,
+        "desktopimage": "https://b.zmtcdn.com/data/o2_assets/593d03e48a6ac29b7658cee14f03f4e51655203204.png",
+        "mobileimage" : "https://b.zmtcdn.com/data/o2_assets/c1d4649400d0c60c6f1ca77dec46d14b1655203236.png",
+        "count": "14.7 million",
+        "detail": "Average monthly transacting customers*"
+    },
+    {
+        "id": 4,
+        "desktopimage": "https://b.zmtcdn.com/data/o2_assets/17e9e3e6fcd7a877f55c8e3816ec956c1655203077.png",
+        "mobileimage" : "https://b.zmtcdn.com/data/o2_assets/d730ffe4695f45cd049f14d1e9f289611655203126.png",
+        "count": "180,000",
+        "detail": "Average monthly active food delivery restaurant partners*"
+    },
+    {
+        "id": 5,
+        "desktopimage": "https://b.zmtcdn.com/data/o2_assets/23d2cb3dbe319779cd8b7f630f0290441655110868.png",
+        "mobileimage" : "https://b.zmtcdn.com/data/o2_assets/188e4fc3ba8539234fc5a246bee050981654852770.png",
+        "count": "285,000",
+        "detail": "Average monthly active delivery partners*"
+    }
+]
