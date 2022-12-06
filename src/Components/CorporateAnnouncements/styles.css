@@ -1,0 +1,30 @@
+.corporate-container {
+  width: fit-content;
+  padding: 1.2rem;
+  color: rgb(65, 65, 65);
+}
+.corporate-container .corporate-heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+}
+.content .hr {
+  background-color: rgba(243, 242, 242, 0.212);
+}
+.content .detail-box {
+  margin: 2rem 0;
+}
+.content .date {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.corporate-container .heading {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+.content .details {
+  color: #ef4f5f;
+  font-size: 1.1rem;
+}
