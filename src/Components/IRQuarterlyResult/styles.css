@@ -31,7 +31,7 @@
 .container .btn1 {
   display: flex;
   max-width: fit-content;
-  background-color: rgba(68, 67, 67, 0.053);
+  background-color: rgba(68, 67, 67, 0.121);
   border: none;
   border-radius: 0.4rem;
   /* padding: 0.8rem; */
@@ -48,7 +48,7 @@
 @media (min-width: 768px) {
   .container {
     padding: 0rem;
-    width: 56vw;
+    width: 70vw;
   }
   .container .heading {
     font-size: 2rem;
@@ -59,12 +59,14 @@
     font-size: x-large;
   }
   .container .btnHolder {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
     gap: 0;
+    margin-bottom: 1rem;
   }
-
   .container .btn1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-right: 2rem;
   }
 }
 @media (max-width: 1130px) {

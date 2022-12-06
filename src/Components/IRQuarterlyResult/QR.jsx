@@ -11,6 +11,7 @@ const QuarterlyResult = () => {
       <div className="btnHolder">
         <Btn1> Shareholders' Letter</Btn1>
         <Btn1> Earnings Call Replay</Btn1>
+        <Btn1> Earnings Call Transcript</Btn1>
       </div>
       <Button>See all quaterly results</Button>
     </div>
