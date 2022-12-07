@@ -2,6 +2,7 @@ import React from "react";
 import Content from "./Content";
 import Button from "../Button/Button";
 import "./styles.css";
+
 const CorporateAnnouncements = () => {
   return (
     <div className="corporate-container">
