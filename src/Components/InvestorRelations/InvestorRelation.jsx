@@ -5,6 +5,7 @@ import IRAboutUs from "../IRAboutUs/AboutUs";
 import InvestorNavbar from "../InvestorNavbar/InvestorNavbar";
 import CorporateAnnouncements from "../CorporateAnnouncements/CorporateAnnouncements";
 import Footer from "../Footer/Footer";
+import IROurBlogs from "../IROurBlogs/IROurBlogs";
 const InvestorRelations = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const InvestorRelations = () => {
       <QuarterlyResult />
       <IRAboutUs />
       <CorporateAnnouncements />
+      <IROurBlogs />
       <Footer />
     </>
   );
