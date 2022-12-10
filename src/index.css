@@ -8,4 +8,6 @@ body {
   font-family: 'Kumbh Sans', 'Red Hat Display';
   margin: 0;
   padding: 0;
+  position: relative;
+  height: 100%;
 }

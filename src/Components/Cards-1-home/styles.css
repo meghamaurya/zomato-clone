@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   /* padding: 1rem 2rem; */
   padding: 3rem 1rem;
@@ -99,3 +100,107 @@
     font-weight: 400;
   }
 }
+=======
+.Herocontainer {
+    /* padding: 1rem 2rem; */
+    padding: 3rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.Herocontainer .card {
+    /* width: 100%; */
+    border: 0.2px solid rgba(189, 189, 189, 0.537);
+    border-radius: 0.8rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Herocontainer .card .card-img {
+    height: 6rem;
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    object-fit: cover;
+}
+
+.Herocontainer .card .text {
+    padding: 0.8rem;  
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    color: black;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.Herocontainer .card .p1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.Herocontainer .card .p2 {
+    font-size: 0.8rem;
+    width: 100%;
+    color: gray;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+@media (max-width: 300px) {
+    .Herocontainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 480px) {
+    .Herocontainer{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.3rem;
+        /* margin: 0.5rem ; */
+        padding: 3rem 1rem;
+    }
+    .Herocontainer .card .text {
+       padding: 0.4rem;
+    }
+    .Herocontainer .card .p1 {
+       font-size: 0.7rem;
+    }
+
+    .Herocontainer .card .p2 {
+       font-size: 1rem;
+     }
+    .Herocontainer .card .card-img{
+       height: 10rem;
+       width: 100%;
+    }
+}
+@media (min-width: 1020px) {
+    .Herocontainer{
+        gap: 1.5rem;
+        padding: 3rem 5rem;
+        /* margin: 1.6rem 10rem; */
+    }
+    .Herocontainer .card:hover {
+        transform: scale(1.04);
+    }
+    .Herocontainer .card .text{
+        padding: 0.4rem 1rem 1rem;
+        
+    }
+    .Herocontainer .card .card-img {
+        height: 10rem;
+    }
+    .Herocontainer .card .p1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+     }
+ 
+     .Herocontainer .card .p2 {
+        font-size: 1rem;
+        padding-top: 0.4rem;
+        font-weight: 400;
+      }
+}
+>>>>>>> Updated navbar

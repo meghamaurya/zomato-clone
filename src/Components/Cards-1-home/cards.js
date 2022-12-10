@@ -9,7 +9,7 @@ const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis)
 const Cards1 = () => {
 
     return (
-        <div className="container">
+        <div className="Herocontainer">
             {cardDetail.map((item) => {
                 return (
                     <Link to='/agra' key={item.id} className='card'>
