@@ -17,7 +17,7 @@ const Carousel = () => {
     } else {
       setScreenImage(false);
     }
-  }, [window]);
+  }, []);
 
   useEffect(() => {
     resetTimeout();

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
-import { MdOutlineSendToMobile } from "react-icons/md";
 import Title from "./Title";
 
 function InvestorNavbar() {
