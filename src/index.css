@@ -10,4 +10,11 @@ body {
   padding: 0;
   position: relative;
   height: 100%;
+<<<<<<< HEAD
+=======
+}
+
+* {
+  font-family: 'Kumbh Sans', 'Red Hat Display';
+>>>>>>> main
 }

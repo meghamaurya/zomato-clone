@@ -53,16 +53,19 @@ function InvestorNavbar() {
         </Link> */}
         <div className="item">
           <Link to="/investorRelations" className="link">
-            Investor Relations
+            FINANCIALS
           </Link>
           <Link to="" className="link">
-            Add restaurant
+            ANNOUNCEMENTS
           </Link>
           <Link to="" className="link">
-            Log in
+            GOVERNANCE
           </Link>
           <Link to="" className="link">
-            Sign up
+            ESG INITIATIVES
+          </Link>
+          <Link to="" className="link">
+            RESOURCES
           </Link>
         </div>
       </div>

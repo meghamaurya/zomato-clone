@@ -1,16 +1,22 @@
 import React from "react";
-import Carousel from "./Carousel";
+import Carousel from "../Carousel/Carousel";
 import QuarterlyResult from "../IRQuarterlyResult/QR";
 import IRAboutUs from "../IRAboutUs/AboutUs";
 import InvestorNavbar from "../InvestorNavbar/InvestorNavbar";
+import CorporateAnnouncements from "../CorporateAnnouncements/CorporateAnnouncements";
+import Footer from "../Footer/Footer";
+import IROurBlogs from "../IROurBlogs/IROurBlogs";
 const InvestorRelations = () => {
   return (
-    <div>
+    <>
       <InvestorNavbar />
       <Carousel />
       <QuarterlyResult />
       <IRAboutUs />
-    </div>
+      <CorporateAnnouncements />
+      <IROurBlogs />
+      <Footer />
+    </>
   );
 };
 

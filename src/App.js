@@ -3,10 +3,13 @@ import './App.css';
 import HomePage from "./Components/HomePage/HomePage.js";
 import FoodDetails from './Components/FoodDetails/FoodDetails';
 import InvestorRelations from './Components/InvestorRelations/InvestorRelation';
+import ScrollToTop from './Components/ScrollToTop/Scroll'
+
 
 function App() {
   return (
     <BrowserRouter >
+    <ScrollToTop />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/agra' element={<FoodDetails />} />

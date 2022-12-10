@@ -7,6 +7,7 @@ import Delivery from './Delivery';
 import Heading from './Heading';
 import CircleItem from './CircleItem';
 import { data } from './TopBrands'
+import FoodCards from './FoodCards/FoodCards';
 
 
 function Details() {
@@ -54,6 +55,9 @@ function Details() {
                         )
                     })}
                 </div>
+            </div>
+            <div className='foood'>
+            <FoodCards />
             </div>
         </div>
     )

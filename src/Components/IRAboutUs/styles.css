@@ -2,14 +2,16 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   padding: 0 1rem;
-  background-color: rgba(68, 67, 67, 0.053);
+  background-color: rgba(120, 118, 118, 0.053);
 }
 .section .heading {
   font-weight: 500;
   color: rgb(65, 65, 65);
 }
 .section .image {
-  object-fit: contain;
+  /* object-fit: contain; */
+  height: 300px;
+  margin-top: 1rem;
   border-radius: 1rem;
 }
 
@@ -58,7 +60,7 @@
     grid-column: 1;
     grid-row: 1;
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: -4rem;
     font-size: xx-large;
   }
   .section .image {
@@ -70,6 +72,7 @@
   .section .para {
     grid-column: 1/3;
     grid-row: 2;
+    padding-right: 4rem;
     /* gap: 4rem; */
     /* padding: 1rem 3rem 2rem 0; */
     font-size: 1.3rem;

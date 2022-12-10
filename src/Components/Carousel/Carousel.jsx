@@ -1,16 +1,24 @@
 import { useRef } from "react";
 import { useEffect, useState } from "react";
-import sliderImg from "./sliderImage.json";
+import sliderImg from "../Carousel/sliderImage.json";
 import "./styles.css";
 const Carousel = () => {
   const [index, setIndex] = useState(0);
+  const [screenImage, setScreenImage] = useState(false);
   const timeoutRef = useRef(null);
-
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
   }
+  useEffect(() => {
+    if (window.screen.width >= 480) {
+      setScreenImage(true);
+    } else {
+      setScreenImage(false);
+    }
+  }, [window]);
+
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
@@ -33,8 +41,12 @@ const Carousel = () => {
       >
         {sliderImg.map(({ id, desktopimage, mobileimage, count, detail }) => (
           <div key={id} className="slide">
-            <img src={desktopimage} alt="" className="image" width="100%" />
-            {/* <img src={mobileimage} alt="" className="image" width="100%" /> */}
+            {screenImage ? (
+              <img src={desktopimage} alt="" className="image" width="100%" />
+            ) : (
+              <img src={mobileimage} alt="" className="image" width="100%" />
+            )}
+
             <div className="detail">
               <div className="part1">
                 <h2 className="title">{count}</h2>
