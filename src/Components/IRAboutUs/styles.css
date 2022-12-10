@@ -9,7 +9,7 @@
   color: rgb(65, 65, 65);
 }
 .section .image {
-  /* object-fit: contain; */
+  object-fit: contain;
   height: 300px;
   margin-top: 1rem;
   border-radius: 1rem;
