@@ -5,11 +5,7 @@ import { IoMdMenu } from "react-icons/io";
 import { RiCloseLine } from "react-icons/ri";
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import List from './List';
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
-=======
 import Button from './Button';
->>>>>>> main
 
 
 function Navbar(props) {
@@ -39,24 +35,20 @@ function Navbar(props) {
                 {isNavExpanded ?
                     <div className='smallItem'>
                         <RiCloseLine onClick={handleClick} className='hamburger-cross' />
-<<<<<<< HEAD
-<<<<<<< HEAD
                         <Link to="investorRelations" className="link">Investor Relations</Link>
                         <Link to="" className="link">Add restaurant</Link>
                         <Link to="" className="link" >Log in</Link>
                         <Link to="" className="link">Sign up</Link>
-=======
+
                         <List link="/investorRelations" title='Investor Relations' />
                         <List link="/" title='Add restaurant' />
                         <List link='/login' title="Log in" />
                         <List link='/login' title='Sign up' />
->>>>>>> Updated navbar
-=======
+
                         <List link='/investorRelations' title='Investor Relations' />
                         <List link='/' title='Add Restaurant' />
                         <Button click={handleLogin} title='Log in' />
                         <Button click={handleSignUp} title='Sign up' />
->>>>>>> main
                     </div> : null}
 
 
@@ -68,24 +60,19 @@ function Navbar(props) {
                     <MdOutlineSendToMobile /> <span>Get the App</span>
                 </Link>
                 <div className='item'>
-<<<<<<< HEAD
-<<<<<<< HEAD
                     <Link to="/investorRelations" className="link">Investor Relations</Link>
                     <Link to="" className="link">Add restaurant</Link>
                     <Link to="" className="link">Log in</Link>
                     <Link to="" className="link">Sign up</Link>
-=======
+
                     <List link="/investorRelations" title='Investor Relations' />
                     <List link="/" title='Add restaurant' />
                     <List link='/login' title="Log in" />
                     <List link='/login' title='Sign up' />
->>>>>>> Updated navbar
-=======
                     <List link='/investorRelations' title='Investor Relations' />
                     <List link='/' title='Add Restaurant' />
                     <Button click={handleLogin} title='Log in' />
                     <Button click={handleSignUp} title='Sign up' />
->>>>>>> main
                 </div>
             </div>
 
