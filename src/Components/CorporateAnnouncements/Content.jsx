@@ -4,7 +4,7 @@ import { BiCaretRight } from "react-icons/bi";
 const Content = (props) => {
   return (
     <div className="content">
-      <hr className="hr" />
+      <hr className="hrLine" />
       <div className="detail-box">
         <span className="date">{props.date}</span>
         <h2 className="heading">{props.heading}</h2>
