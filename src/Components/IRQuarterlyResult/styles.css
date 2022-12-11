@@ -4,11 +4,8 @@
   width: fit-content;
   margin: auto;
   color: rgb(10, 10, 10);
-  padding: 0rem 8rem 1rem 1rem;
+  padding: 0rem 10rem 0rem 1rem;
   translate: 0 -4rem;
-}
-button.btn1 {
-  padding: 0;
 }
 
 .container .heading {
@@ -26,13 +23,13 @@ button.btn1 {
 
 .container .btn1 {
   max-width: fit-content;
-  background-color: rgba(241, 237, 237, 0.986);
+  background-color: rgb(248, 245, 245);
   border: none;
   font-size: small;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0.7rem 0.5rem;
   border-radius: 0.4rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   color: rgb(0, 0, 0);
   padding-left: 0;
 }
@@ -62,6 +59,7 @@ button.btn1 {
   }
   .container .btn1 {
     font-size: 1.2rem;
+    font-weight: 500;
     padding-left: 0;
   }
 }
