@@ -1,12 +1,10 @@
 .container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* display: flex;
-  flex-direction: column; */
-  /* width: 56vw; */
+  width: fit-content;
   margin: auto;
   color: rgb(10, 10, 10);
-  padding: 0rem 16rem 1rem 3rem;
+  padding: 0rem 14rem 1rem 1rem;
   translate: 0 -4rem;
 }
 
@@ -20,23 +18,19 @@
 .container .year {
   font-weight: 400;
   font-size: medium;
-  /* margin-block-end: 0; */
-  /* margin-block-start: 0; */
   color: rgb(125, 124, 124);
 }
-.container .btnHolder {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
+
 .container .btn1 {
-  display: flex;
   max-width: fit-content;
-  background-color: rgba(68, 67, 67, 0.121);
+  background-color: rgba(241, 237, 237, 0.986);
   border: none;
+  font-size: small;
+  font-weight: 500;
+  padding: 0.7rem 0.5rem;
   border-radius: 0.4rem;
-  /* padding: 0.8rem; */
   margin-bottom: 0.8rem;
-  color: rgb(10, 10, 10);
+  color: rgb(0, 0, 0);
 }
 @media (max-width: 300px) {
   .container {
@@ -44,14 +38,14 @@
     padding: 1px;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .container {
-    padding: 0rem;
-    width: 70vw;
+    padding: 0rem 14rem 1rem 1rem;
+    translate: 0 -2rem;
   }
   .container .heading {
     font-size: 2rem;
+    margin-top: 1rem;
     margin-block-end: 1rem;
   }
 
@@ -59,18 +53,34 @@
     font-size: x-large;
   }
   .container .btnHolder {
-    display: flex;
-    /* grid-template-columns: repeat(3, 1fr); */
-    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 1rem;
   }
   .container .btn1 {
     font-size: 1.2rem;
-    margin-right: 2rem;
   }
 }
-@media (max-width: 1130px) {
+
+@media (min-width: 590px) {
+  .container {
+    padding: 0rem 0rem 2rem 1rem;
+    margin: auto 1rem;
+    translate: 0 -2rem;
+  }
   .container .btnHolder {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 865px) {
+  .container {
+    padding: 0rem 4rem 0rem 4rem;
+    translate: 0 -7rem;
+  }
+  .container .btnHolder {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-bottom: 1rem;
   }
 }
