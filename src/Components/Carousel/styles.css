@@ -76,7 +76,7 @@
 }
 @media (min-width: 768px) {
   .slideshow .slideshowSlider .slide .detail {
-    translate: 2rem -12rem;
+    translate: 7.5rem -12rem;
   }
 
   .slideshow .slideshowSlider .slide .detail .part1 .title {
@@ -97,7 +97,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
   .slideshow .slideshowSlider {
     height: 100% !important;
   }
