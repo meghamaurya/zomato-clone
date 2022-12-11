@@ -24,6 +24,8 @@
 
 .slideshow .slideshowDots {
   text-align: center;
+  opacity: 0.6;
+  translate: 0 -1rem;
 }
 .slideshow .dot {
   display: inline-block;
@@ -75,7 +77,6 @@
 @media (min-width: 768px) {
   .slideshow .slideshowSlider .slide .detail {
     translate: 2rem -12rem;
-    padding-left: 12rem;
   }
 
   .slideshow .slideshowSlider .slide .detail .part1 .title {
@@ -90,9 +91,9 @@
     font-size: 0.9rem;
     translate: -7rem;
   }
-  .slideshowDots .dot {
+  .slideshow .slideshowDots {
     opacity: 0.6;
-    translate: 0 -10rem;
+    translate: 0 -7rem;
   }
 }
 
