@@ -1,8 +1,8 @@
 .section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 0rem 1rem 3rem 1rem;
-  background-color: rgba(120, 118, 118, 0.053);
+  padding: 0rem 1.5rem 3rem 1.5rem;
+  background-color: rgb(250, 249, 249);
 }
 .section .heading {
   font-weight: 500;
@@ -11,11 +11,12 @@
 .section .image {
   object-fit: cover;
   height: 250px;
-  margin-top: 1rem;
-  border-radius: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.7rem;
 }
 
 .section .para {
+  font-size: large;
   font-weight: 300;
   padding-top: 1.5rem;
   color: rgb(89, 88, 88);
@@ -40,6 +41,7 @@
     gap: 1rem;
     object-fit: cover;
     height: 300px;
+    margin-top: 1rem;
     justify-self: center;
   }
   .section .para {
@@ -60,7 +62,7 @@
   .section .heading {
     grid-column: 1;
     grid-row: 1;
-    margin-block-start: 0;
+    margin-block-start: 1rem;
     margin-block-end: -4rem;
     font-size: xx-large;
   }
@@ -76,6 +78,7 @@
     grid-row: 2;
     padding-right: 4rem;
     /* gap: 4rem; */
+    translate: 0 -2rem;
     padding: 1rem 3rem 2rem 0;
     font-size: 1.3rem;
     line-height: 2rem;
