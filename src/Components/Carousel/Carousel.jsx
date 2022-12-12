@@ -17,7 +17,8 @@ const Carousel = () => {
     } else {
       setScreenImage(false);
     }
-  }, [window]);
+    // }, [window]);  //this throw an error
+  }, []); //this deploy with error but carousal is not working
 
   useEffect(() => {
     resetTimeout();
