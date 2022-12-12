@@ -106,6 +106,11 @@
 }
 @media (min-width: 1100px) {
   .investorNavbar .largeScreen .add {
+    margin: 0rem 18rem 0 4.5rem;
+  }
+}
+@media (min-width: 1300px) {
+  .investorNavbar .largeScreen .add {
     margin: 0rem 26rem 0 4.5rem;
   }
 }
