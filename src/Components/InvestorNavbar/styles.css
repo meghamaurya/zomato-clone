@@ -65,23 +65,24 @@
 
 @media (min-width: 768px) {
   .investorNavbar {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1rem;
   }
   .investorNavbar .smallScreen {
     display: none;
   }
   .investorNavbar .largeScreen {
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
   }
+
   .investorNavbar .largeScreen .add {
     text-decoration: none;
     margin-block-end: 0rem;
     display: flex;
     gap: 0.2rem;
     align-items: center;
-    margin: auto;
+    margin: 0rem 20rem 0 4.8rem;
   }
   .investorNavbar .largeScreen .add .heading {
     color: #151515;
@@ -96,5 +97,15 @@
   .investorNavbar .largeScreen .item .link {
     text-decoration: none;
     color: #151515;
+  }
+}
+@media (min-width: 768px) {
+  .investorNavbar .largeScreen .add {
+    margin: auto;
+  }
+}
+@media (min-width: 1100px) {
+  .investorNavbar .largeScreen .add {
+    margin: 0rem 26rem 0 4.5rem;
   }
 }
