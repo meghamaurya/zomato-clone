@@ -98,7 +98,7 @@
   .slideshow .slideshowSlider .slide .detail .part2 {
     color: rgba(255, 255, 255, 0.695);
     font-size: 0.9rem;
-    translate: -7rem;
+    translate: rem -7rem;
   }
   .slideshow .slideshowDots {
     opacity: 0.6;
