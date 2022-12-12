@@ -85,7 +85,7 @@
 }
 @media (min-width: 768px) {
   .slideshow .slideshowSlider .slide .detail {
-    translate: 7.5rem -12rem;
+    translate: 4.5rem -12rem;
   }
 
   .slideshow .slideshowSlider .slide .detail .part1 .title {
@@ -105,7 +105,16 @@
     translate: 0 -7rem;
   }
 }
-
+@media (min-width: 1100px) {
+  .slideshow .slideshowDots {
+    translate: 0 -7rem;
+  }
+}
+@media (min-width: 1320px) {
+  .slideshow .slideshowDots {
+    translate: 0 -5rem;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .slideshow .slideshowSlider {
     height: 100% !important;

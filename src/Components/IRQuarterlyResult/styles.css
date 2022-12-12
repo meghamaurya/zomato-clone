@@ -4,7 +4,7 @@
   width: fit-content;
   margin: auto;
   color: rgb(10, 10, 10);
-  padding: 0rem 10rem 0rem 1rem;
+  padding: 0rem 8rem 0rem 0rem;
   translate: 0 -4rem;
 }
 
@@ -35,12 +35,12 @@
 }
 @media (max-width: 300px) {
   .container {
-    padding: 1px;
+    padding: 0rem 4rem 0rem 1rem;
   }
 }
 @media (min-width: 480px) {
   .container {
-    padding: 0rem 14rem 1rem 1rem;
+    padding: 0rem 16rem 1rem 1rem;
     translate: 0 -2rem;
   }
   .container .heading {
@@ -76,7 +76,7 @@
 }
 @media (min-width: 768px) {
   .container {
-    padding: 0rem 3rem;
+    padding: 0rem 3.5rem;
     translate: 0 -5rem;
   }
 }

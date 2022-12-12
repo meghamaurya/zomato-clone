@@ -1,5 +1,5 @@
 .blogContainer {
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: rgb(249, 249, 249);
 }
 .blogSection {
@@ -39,7 +39,7 @@
 
 @media (min-width: 480px) {
   .blogContainer {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
   }
   .blogSection {
     grid-template-columns: repeat(2, 1fr);
@@ -48,7 +48,7 @@
 }
 @media (min-width: 768px) {
   .blogContainer {
-    padding: 0rem 4rem;
+    padding: 0rem 4.8rem;
   }
   .blogSection {
     grid-template-columns: repeat(3, 1fr);
