@@ -26,7 +26,7 @@
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 1rem;
     margin: auto;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
   }
   .section .heading {
     grid-column: 1;
@@ -56,14 +56,14 @@
 @media (min-width: 768px) {
   .section {
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem 8rem;
+    padding: 2rem 4rem;
   }
 
   .section .heading {
     grid-column: 1;
     grid-row: 1;
-    margin-block-start: 1rem;
-    margin-block-end: -4rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: -2rem;
     font-size: xx-large;
   }
   .section .image {
@@ -78,9 +78,19 @@
     grid-row: 2;
     padding-right: 4rem;
     /* gap: 4rem; */
-    translate: 0 -2rem;
+
     padding: 1rem 3rem 2rem 0;
     font-size: 1.3rem;
     line-height: 2rem;
+  }
+}
+@media (min-width: 1100px) {
+  .section {
+    padding: 2rem 5rem;
+  }
+}
+@media (min-width: 1310px) {
+  .section .para {
+    translate: 0 -2rem;
   }
 }

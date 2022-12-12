@@ -74,6 +74,15 @@
   border-radius: 0.5rem;
   font-size: 0.5rem;
 }
+@media (max-width: 300px) {
+  .slideshow .slideshowDots {
+    translate: 0 -2.5rem;
+  }
+
+  .slideshow .slideshowSlider .slide .detail {
+    translate: 0 -7rem;
+  }
+}
 @media (min-width: 768px) {
   .slideshow .slideshowSlider .slide .detail {
     translate: 7.5rem -12rem;

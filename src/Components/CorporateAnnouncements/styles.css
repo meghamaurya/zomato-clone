@@ -50,8 +50,13 @@
     font-weight: 300;
   }
 }
+@media (min-width: 768px) {
+  .corporate-container {
+    padding: 0rem 4rem 4rem;
+  }
+}
 @media (min-width: 1100px) {
   .corporate-container {
-    padding: 0rem 4rem 2rem 7rem;
+    padding: 0rem 5rem 2rem 5rem;
   }
 }
