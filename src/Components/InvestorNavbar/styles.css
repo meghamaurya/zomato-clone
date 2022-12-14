@@ -14,6 +14,7 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  padding: 0.6rem 0;
 }
 .investorNavbar .smallScreen .add {
   color: #151515;
@@ -32,7 +33,7 @@
   position: absolute;
   z-index: 40;
   width: 100%;
-  top: 0;
+  top: 0.4rem;
   right: 0;
   background: white;
   bottom: 0;
@@ -81,7 +82,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 0rem;
+    padding: 0rem 3rem;
     align-items: center;
   }
 

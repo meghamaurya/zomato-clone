@@ -27,7 +27,7 @@ function Details(props) {
             <div className='Nav'>
                 <Logo />
                 <button className='btn'>Use App</button>
-                <div className='userIcon'>
+                <div onClick={handleLogin} className='userIcon'>
                     <FaUserAlt />
                 </div>
                 <button onClick={handleLogin} className='rightLink'>Log in</button>
