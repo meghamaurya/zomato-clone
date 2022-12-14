@@ -26,7 +26,7 @@
     margin-right: auto;
 }
 
-.detailsPage .Nav button {
+.detailsPage .Nav .btn {
     cursor: pointer;
     padding: 0.5rem 0.8rem;
     background: #E23744;
@@ -51,10 +51,15 @@
 
 .detailsPage .Nav .rightLink {
     color: #969696;
-    margin: 0 1rem;
+    margin: 0;
     display: none;
     font-size: 1.1rem;
     text-decoration: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 2rem;
+    cursor: pointer;
 }
 
 .detailsPage .Nav .rightLink:hover {
@@ -137,7 +142,7 @@
 }
 
 @media (max-width: 300px) {
-    .detailsPage .Nav button {
+    .detailsPage .Nav .btn {
         display: none;
     }
 }
@@ -148,7 +153,7 @@
         box-shadow: none;
     }
 
-    .detailsPage .Nav button {
+    .detailsPage .Nav .btn {
         display: none;
     }
 

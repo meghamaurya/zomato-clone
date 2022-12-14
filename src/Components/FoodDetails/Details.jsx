@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Logo from '../Logo';
 import './detail.css';
 import { FaUserAlt } from 'react-icons/fa'
-import { Link } from 'react-router-dom';
 import Delivery from './Delivery';
 import Heading from './Heading';
 import CircleItem from './CircleItem';
@@ -10,18 +9,29 @@ import { data } from './TopBrands'
 import FoodCards from './FoodCards/FoodCards';
 
 
-function Details() {
+function Details(props) {
     const [clicked, setClicked] = useState('Delivery')
+
+    const handleSignUp = () => {
+        props.setSignUp(!props.signup);
+        
+    }
+
+    const handleLogin = () => {
+        props.setLogin(!props.login);
+        
+    }
+
     return (
         <div className='detailsPage'>
             <div className='Nav'>
                 <Logo />
-                <button>Use App</button>
+                <button className='btn'>Use App</button>
                 <div className='userIcon'>
                     <FaUserAlt />
                 </div>
-                <Link to='/login' className='rightLink'>Log in</Link>
-                <Link to='/signup' className='rightLink'>Sign up</Link>
+                <button onClick={handleLogin} className='rightLink'>Log in</button>
+                <button onClick={handleSignUp} className='rightLink'>Sign up</button>
             </div>
             <div className='Delivery'>
                 <Delivery clicked={clicked} setClicked={setClicked} src={clicked === 'Delivery' ? 'https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png' : 'https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png'} title='Delivery' />
